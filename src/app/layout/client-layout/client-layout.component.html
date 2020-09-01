@@ -1,0 +1,11 @@
+<section class="bg-color-athens-gray d-flex flex-column">
+  <app-app-header *ngIf="sidebar" [sidebar]="sidebar"></app-app-header>
+  <div class="section-content d-flex">
+    <app-sidebar [isAdmin]="false" [menus]="menus" class="position-absolute"></app-sidebar>
+    <div class="d-flex flex-column flex-grow-1 content-section position-relative">
+      <div #client_panel_container [id]="ScrollPosition.ClientPanelContainer" class="router-wrapper flex-grow-1 overflow-auto pretty-scroll position-relative">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>

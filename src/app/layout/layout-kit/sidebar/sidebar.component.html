@@ -1,0 +1,14 @@
+<div class="sidebar bg-white shadow" [class.collapsed]="isCollapsed" (mouseenter)="isCollapsed = false" (mouseleave)="isCollapsed = true">
+  <a class="position-absolute z-index-1 right-n10 cursor-pointer btn-collapse d-none d-md-block" (click)="toggle()"><img src="assets/images/icons/collapse.svg" alt="Collapse"></a>
+  <div class="d-flex flex-column justify-content-between h-100">
+    <ul class="list-unstyled overflow-hidden">
+      <li *ngFor="let item of menus" class="d-flex align-items-center p-10 cursor-pointer user-select-none" [routerLink]="[item.route]" routerLinkActive="active">
+        <a class="d-flex align-items-center" (click)="isCollapsed = true">
+          <img class="inactive" src="assets/images/{{ isAdmin ? 'admin' : 'client' }}-sidebar/{{ item.icon }}.svg" [alt]="item.label">
+          <img class="active" src="assets/images/{{ isAdmin ? 'admin' : 'client' }}-sidebar/{{ item.icon }}-active.svg" [alt]="item.label">
+          <span class="font-15 font-weight-medium ml-10">{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

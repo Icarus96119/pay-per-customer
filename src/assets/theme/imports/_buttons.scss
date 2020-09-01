@@ -1,0 +1,21 @@
+.btn.btn {
+  &-primary {
+    background: $astronaut;
+    color: white;
+  }
+  &-warning {
+    background: $equator;
+    color: white;
+  }
+  &-success {
+    background: $vista-blue;
+    color: white;
+  }
+}
+
+.btn-normal {
+  min-width: 145px;
+  font-size: 12px;
+}
+
+

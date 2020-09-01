@@ -1,0 +1,17 @@
+<div ngbDropdown class="nav-dropdown px-10 px-md-20 h-100 d-flex justify-content-center align-items-center">
+  <div class="d-flex align-items-center h-100" id="my_account" ngbDropdownToggle>
+    <app-avatar size="32"></app-avatar>
+    <div class="align-items-center text-primary h-100 d-none d-md-flex flex-row-reverse"><a class="nav-link text-primary">Danny</a></div>
+  </div>
+  <div class="position-absolute left" ngbDropdownMenu aria-labelledby="my_account">
+    <button ngbDropdownItem>
+      <app-icon icon="setting"></app-icon>
+      <span>Account settings</span>
+    </button>
+    <div class="dropdown-divider m-0"></div>
+    <button ngbDropdownItem (click)="logout()">
+      <app-icon icon="logout"></app-icon>
+      <span>Logout</span>
+    </button>
+  </div>
+</div>

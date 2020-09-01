@@ -1,0 +1,33 @@
+div, p, a, span {
+  font-size: 15px;
+}
+
+@for $i from 5 through 90 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h6 {
+  line-height: 24px;
+}
+
+p {
+  line-height: 22px;
+}
+
+.underline {
+  text-decoration: underline !important;
+}

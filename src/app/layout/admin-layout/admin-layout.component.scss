@@ -1,0 +1,26 @@
+@import "../../../assets/theme";
+
+section {
+  @include absolute_fit_parent;
+  .section-content {
+    flex-grow: 1;
+  }
+}
+
+.content-section {
+  max-height: calc(100vh - 64px);
+}
+
+.router-wrapper {
+  position: absolute !important;
+  top: 0;
+  left: 64px;
+  right: 0;
+  bottom: 41px;
+}
+
+@include media-breakpoint-down(sm) {
+  .router-wrapper {
+    left: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px 0 rgba(224,229,238,0.9);
+}
+
+.x-middle {
+  @include absolute_middle(x);
+}
+
+.y-middle {
+  @include absolute_middle(y);
+}

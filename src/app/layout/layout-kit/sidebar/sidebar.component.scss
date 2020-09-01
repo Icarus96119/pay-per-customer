@@ -1,0 +1,82 @@
+@import "../../../../assets/theme";
+
+$sidebar-width: 150px;
+$sidebar-collapsed-width: 60px;
+
+:host {
+  display: block;
+  z-index: 100;
+}
+
+.sidebar {
+  position: relative;
+  width: $sidebar-width;
+  height: calc(100vh - 65px);
+  transition: ease width .3s;
+
+  .btn-collapse {
+    border-radius: 50%;
+    transition: ease all .3s;
+    &:hover {
+      background-color: rgba(7, 163, 157, 0.5);
+    }
+  }
+
+  li {
+    &.active, &:hover {
+      background: $astronaut;
+      a {
+        img {
+          &.active {
+            display: block;
+          }
+
+          &.inactive {
+            display: none;
+          }
+        }
+
+        span {
+          color: white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  a {
+    img {
+      width: 24px;
+      height: 24px;
+
+      &.active {
+        display: none;
+      }
+
+      &.inactive {
+        display: block;
+      }
+    }
+
+    text-decoration: none;
+    span {
+      min-width: 90px;
+      color: $mine-shaft;
+      transition: ease color .3s;
+    }
+  }
+
+  &.collapsed {
+    width: $sidebar-collapsed-width;
+    .btn-collapse {
+      transform: rotate(180deg);
+    }
+    a span {
+      display: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 0;
+    }
+  }
+}

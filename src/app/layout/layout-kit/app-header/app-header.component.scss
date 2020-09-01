@@ -1,0 +1,19 @@
+@import "../../../../assets/theme";
+
+nav {
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid $white-lilac;
+
+  .menu {
+    img {
+      width: 24px;
+    }
+  }
+
+  .notification {
+    border: solid 1px $gallery;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}

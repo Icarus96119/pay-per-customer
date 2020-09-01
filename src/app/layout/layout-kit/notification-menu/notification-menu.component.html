@@ -1,0 +1,13 @@
+<div class="nav-dropdown h-100 d-flex position-relative justify-content-center align-items-center" #dropdown="ngbDropdown" ngbDropdown (openChange)="openChanged($event)">
+  <div class="d-flex w-100 h-100 align-items-center">
+    <span class="alert-circle d-flex align-items-center justify-content-center text-white font-weight-bold font-8 bg-color-radical-red">5</span>
+    <div class="d-flex justify-content-center align-items-center w-100 h-100 no-arrow" id="dropdown" ngbDropdownToggle>
+      <img class="cursor-pointer width-30" src="assets/images/icons/bell.svg" >
+    </div>
+  </div>
+  <div class="position-absolute left" ngbDropdownMenu aria-labelledby="dropdown">
+    <app-notification-box
+      [isLoading]="isLoading"
+      (closeBox)="dropdown.close()"></app-notification-box>
+  </div>
+</div>
