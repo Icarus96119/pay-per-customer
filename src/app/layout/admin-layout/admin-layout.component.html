@@ -1,5 +1,5 @@
 <section class="bg-color-athens-gray d-flex flex-column">
-  <app-app-header *ngIf="sidebar" [sidebar]="sidebar"></app-app-header>
+  <app-app-header *ngIf="sidebar" (toggleSidebar)="toggleSidebar()"></app-app-header>
   <div class="section-content d-flex">
     <app-sidebar [menus]="menus" class="position-absolute"></app-sidebar>
     <div class="d-flex flex-column flex-grow-1 content-section position-relative">

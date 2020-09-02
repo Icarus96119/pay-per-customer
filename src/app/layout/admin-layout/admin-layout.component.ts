@@ -14,7 +14,7 @@ import { SidebarComponent } from '../layout-kit/sidebar/sidebar.component';
 })
 export class AdminLayoutComponent implements OnInit, AfterViewInit {
 
-  @ViewChild(SidebarComponent) sidebar: SidebarComponent;
+  @ViewChild(SidebarComponent, { static: true }) sidebar: SidebarComponent;
   @ViewChild('admin_panel_container') adminPanelContainer: ElementRef;
 
   ScrollPosition = ScrollPosition;
@@ -38,6 +38,10 @@ export class AdminLayoutComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.adminLayoutService.setAdminPanelContainer(this.adminPanelContainer);
+  }
+
+  toggleSidebar(): void {
+    this.sidebar.toggle();
   }
 
 }
