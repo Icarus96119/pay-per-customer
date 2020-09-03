@@ -13,6 +13,6 @@ export interface Subscription extends Entity {
   user: User;
   paymentMethod: PaymentMethod;
   nextRenewal: string;
-  renewalAmount : number;
+  renewalAmount: number;
   numberOfRenewals: number;
 }

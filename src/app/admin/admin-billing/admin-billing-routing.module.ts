@@ -12,11 +12,13 @@ const routes: Routes = [
       { path: '', redirectTo: ROUTES.admin.billing.invoices },
       {
         path: ROUTES.admin.billing.invoices,
-        loadChildren: () => import('./admin-billing-invoice/admin-billing-invoice.module').then(m => m.AdminBillingInvoiceModule),
+        loadChildren: () => import('./admin-billing-invoice/admin-billing-invoice.module')
+          .then(m => m.AdminBillingInvoiceModule),
       },
       {
         path: ROUTES.admin.billing.subscriptions,
-        loadChildren: () => import('./admin-billing-subscription/admin-billing-subscription.module').then(m => m.AdminBillingSubscriptionModule),
+        loadChildren: () => import('./admin-billing-subscription/admin-billing-subscription.module')
+          .then(m => m.AdminBillingSubscriptionModule),
       },
     ]
   }

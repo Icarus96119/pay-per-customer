@@ -23,7 +23,7 @@ export class AdminBillingComponent implements OnInit {
     this.header = routerToLabel(this.router);
   }
 
-  switchHeader(url: string) {
+  switchHeader(url: string): void {
     this.header = enumToLabel(url);
   }
 

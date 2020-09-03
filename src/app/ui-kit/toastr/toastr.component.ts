@@ -57,7 +57,7 @@ export class ToastrComponent implements OnInit, OnDestroy {
     this.unsubscribeAll.complete();
   }
 
-  close(toastr: Toastr, index) {
+  close(toastr: Toastr, index): void {
     this.toastrs.splice(index, 1);
   }
 

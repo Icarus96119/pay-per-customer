@@ -1,4 +1,20 @@
 <section class="p-15 p-md-30">
-  <p>client-appointment works!</p>
+  <div class="row align-items-center mb-30">
+    <div class="col-12">
+      <h3 class="text-primary font-30 font-weight-bold">Appointments</h3>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-7">
+      <app-icon-button color="white" icon="plus" buttonClass="btn-plus" (handleClick)="addAppointment($event)" label="New Appointment"></app-icon-button>
+    </div>
+    <div class="col-5 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <app-appointment-table ></app-appointment-table>
+    </div>
+  </div>
 </section>
-

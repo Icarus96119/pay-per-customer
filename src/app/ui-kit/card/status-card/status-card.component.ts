@@ -20,7 +20,7 @@ export class StatusCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToLink() {
+  navigateToLink(): void {
     if (this.link) {
       this.router.navigate(this.link);
     }

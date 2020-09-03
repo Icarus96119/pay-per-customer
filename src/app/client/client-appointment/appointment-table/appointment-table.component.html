@@ -1,0 +1,39 @@
+<app-heading-table [title]="title"
+           [canAdd]="canAdd"
+           [sections]="appointments"
+           [columns]="columns"
+           [loading]="isLoading"
+           isHeaderColumn="true"
+           emptyDescription="No invoices to display.">
+
+  <ng-template #titleColumn let-appointment="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold">{{ appointment.title }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #dateColumn let-appointment="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow color-dusty-gray">{{ appointment.date }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #timeColumn let-appointment="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow color-dusty-gray">{{ appointment.time }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #memberColumn let-appointment="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow color-dusty-gray">{{ appointment.contractor.businessName }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #detailColumn let-appointment="row">
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-big btn-primary">View More</button>
+    </div>
+  </ng-template>
+
+</app-heading-table>

@@ -52,13 +52,13 @@ export class CampaignTableComponent implements OnInit {
     this.loadContracts();
   }
 
-  onPage(e: PageEvent) {
+  onPage(e: PageEvent): void {
     this.take = e.pageSize;
     this.skip = this.take * e.pageIndex;
     this.loadContracts();
   }
 
-  private async loadContracts() {
+  loadContracts(): void {
     this.campaigns = allCampaigns.slice(this.skip, this.skip + this.take);
   }
 }

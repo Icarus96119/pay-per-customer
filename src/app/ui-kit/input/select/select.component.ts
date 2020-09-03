@@ -38,14 +38,14 @@ export class SelectComponent implements ControlValueAccessor {
     this.value = obj;
   }
 
-  change(value) {
+  change(value): void {
     // only when change method registered
     if (this.onChange) {
       this.onChange(value);
     }
   }
 
-  clicked(e) {
+  clicked(e): void {
     if (this.readonly) {
       e.preventDefault();
     }

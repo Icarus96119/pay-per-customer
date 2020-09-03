@@ -42,7 +42,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -62,7 +62,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -82,7 +82,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -102,7 +102,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -122,7 +122,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -142,7 +142,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -162,7 +162,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -182,7 +182,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -202,7 +202,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -222,7 +222,7 @@ export const allInvoices: Invoice[] = [
     paymentRetry: '-',
     voidedOn: '-',
     type: InvoiceType.Recurring
-  },{
+  }, {
     status: InvoiceStatus.Paid,
     amount: 1200.012,
     serialId: '13232rabasdfasdf_1212',
@@ -243,4 +243,4 @@ export const allInvoices: Invoice[] = [
     voidedOn: '-',
     type: InvoiceType.Recurring
   }
-]
+];

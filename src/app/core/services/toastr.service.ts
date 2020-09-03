@@ -11,27 +11,27 @@ export class ToastrService {
 
   constructor() { }
 
-  show(type: ToastrType, text: string, title?: string) {
+  show(type: ToastrType, text: string, title?: string): void {
     this.sendToastr$.next({type, title, text});
   }
 
-  success(text: string, title?: string) {
+  success(text: string, title?: string): void {
     this.sendToastr$.next({type: ToastrType.Success, title, text});
   }
 
-  info(text: string, title?: string) {
+  info(text: string, title?: string): void {
     this.sendToastr$.next({type: ToastrType.Info, title, text});
   }
 
-  warning(text: string, title?: string) {
+  warning(text: string, title?: string): void {
     this.sendToastr$.next({type: ToastrType.Warning, title, text});
   }
 
-  danger(text: string, title?: string) {
+  danger(text: string, title?: string): void {
     this.sendToastr$.next({type: ToastrType.Danger, title, text});
   }
 
-  error(error: any, custom: string) {
+  error(error: any, custom: string): void {
     if (error && error.error && error.message && typeof error.error.message === 'string') {
       this.danger(error.error.message);
     } else if (error && error.error && error.message && typeof error.error.message === 'object') {

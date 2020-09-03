@@ -31,7 +31,7 @@ export class CheckboxComponent implements ControlValueAccessor {
     this.value = obj;
   }
 
-  change(value) {
+  change(value): void {
     // only when change method registered
     if (this.onChange) {
       this.onChange(value);

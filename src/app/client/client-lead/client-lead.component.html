@@ -1,4 +1,23 @@
 <section class="p-15 p-md-30">
-  <p>client-lead works!</p>
+  <div class="row align-items-center mb-30">
+    <div class="col-12">
+      <h3 class="text-primary font-30 font-weight-bold">Leads</h3>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <form class="col-12 col-md-7" [formGroup]="leadForm">
+      <div class="d-flex align-items-center">
+        <app-icon-button icon="plus" color="white" label="New Lead"></app-icon-button>
+        <app-select class="mr-10" [options]="options" formControlName="sortByDate"></app-select>
+        <app-search-input placeholder="Search Transaction"></app-search-input>
+      </div>
+    </form>
+    <div class="col-12 col-md-5 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+    </div>
+  </div>
 </section>
-

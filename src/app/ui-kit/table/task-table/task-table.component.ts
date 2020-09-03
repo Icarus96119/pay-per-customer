@@ -14,7 +14,7 @@ import { tasks } from '../../../core/data/task';
 })
 export class TaskTableComponent implements OnInit {
 
-  @Input() canAdd: boolean = false;
+  @Input() canAdd = false;
 
   @ViewChild(HeadingTableComponent) table: HeadingTableComponent;
   @ViewChild('checkColumn', {static: true}) checkColumn: TemplateRef<any>;

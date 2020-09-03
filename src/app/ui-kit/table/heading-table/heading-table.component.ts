@@ -8,7 +8,7 @@ import { TableColumn } from '../../../core/models/table';
 })
 export class HeadingTableComponent implements OnInit {
 
-  @Input() isHeaderColumn: boolean = false;
+  @Input() isHeaderColumn = false;
   @Input() title: string;
   @Input() columns: TableColumn[] = [];
   @Input() sections: any[] = [];

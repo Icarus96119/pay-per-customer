@@ -12,12 +12,12 @@ export enum InvoiceType {
 
 export interface Invoice extends Entity {
   status: InvoiceStatus;
-  amount : number;
+  amount: number;
   serialId: string;
   user: User;
   issuedOn: string;
   paidOn: string;
   paymentRetry: string;
   voidedOn: string;
-  type: InvoiceType
+  type: InvoiceType;
 }

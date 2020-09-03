@@ -45,7 +45,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -66,7 +66,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -87,7 +87,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -108,7 +108,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -129,7 +129,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -150,7 +150,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -171,7 +171,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -192,7 +192,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -213,7 +213,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -234,7 +234,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -255,7 +255,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -276,7 +276,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -297,7 +297,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -318,7 +318,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -339,7 +339,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -360,7 +360,7 @@ export const allCampaignSubscriptions: Subscription[] = [
     nextRenewal: '13 Aug 2020',
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
-  },{
+  }, {
     status: SubscriptionStatus.Paused,
     user: normalUser,
     paymentMethod: PaymentMethod.BankTransfer,
@@ -382,4 +382,4 @@ export const allCampaignSubscriptions: Subscription[] = [
     renewalAmount: 1200.012,
     numberOfRenewals: 2,
   }
-]
+];

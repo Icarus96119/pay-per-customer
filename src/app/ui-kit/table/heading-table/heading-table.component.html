@@ -21,8 +21,8 @@
 </ng-template>
 
 <div class="position-relative">
-  <div *ngFor="let section of sections; let first = first">
-    <div class="d-flex px-15 py-5" *ngIf="!first">
+  <div *ngFor="let section of sections">
+    <div class="d-flex px-15 py-5">
       <span class="color-dusty-gray">{{ section.header }}</span>
     </div>
     <div *ngFor="let row of section.rows">

@@ -35,7 +35,7 @@ export class InvoiceTableComponent implements OnInit {
 
   columns: TableColumn[];
   isLoading = false;
-  total = allInvoices.length
+  total = allInvoices.length;
   skip = 0;
   take = PageSizeDefault;
   invoices: Invoice[] = [];
@@ -61,14 +61,14 @@ export class InvoiceTableComponent implements OnInit {
     this.loadContracts();
   }
 
-  onPage(e: PageEvent) {
+  onPage(e: PageEvent): void {
     this.take = e.pageSize;
     this.skip = this.take * e.pageIndex;
     this.loadContracts();
   }
 
-  private async loadContracts() {
-    this.invoices = allInvoices.slice(this.skip, this.skip + this.take)
+  loadContracts(): void {
+    this.invoices = allInvoices.slice(this.skip, this.skip + this.take);
   }
 }
 

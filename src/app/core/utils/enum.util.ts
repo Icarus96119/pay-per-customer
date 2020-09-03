@@ -1,6 +1,6 @@
 import { Option } from '../models/option';
 
-export function enumToLabel(source, labels?, isCapital = false) {
+export function enumToLabel(source, labels?, isCapital = false): string {
   if (labels) {
     return labels[source];
   }

@@ -26,7 +26,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -38,7 +38,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -50,7 +50,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -62,7 +62,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -74,7 +74,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -86,7 +86,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -98,7 +98,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -110,7 +110,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -122,7 +122,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -134,7 +134,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -146,7 +146,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -158,7 +158,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -170,7 +170,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -182,7 +182,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -194,7 +194,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -206,7 +206,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -218,7 +218,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -230,7 +230,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -242,7 +242,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -254,7 +254,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -266,7 +266,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -278,7 +278,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -290,7 +290,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -302,7 +302,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -314,7 +314,7 @@ export const allCampaigns: Campaign[] = [
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
-  },{
+  }, {
     user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
@@ -327,4 +327,4 @@ export const allCampaigns: Campaign[] = [
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }
-]
+];

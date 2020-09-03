@@ -12,4 +12,12 @@ export class ClientAppointmentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addAppointment(event): void {
+    alert('New Appointment');
+  }
+
+  filter(event): void {
+    alert('Filter Working');
+  }
+
 }
