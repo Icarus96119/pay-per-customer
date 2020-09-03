@@ -7,7 +7,7 @@
            emptyDescription="No invoices to display.">
 
   <ng-template #nameColumn let-lead="row">
-    <div class="d-flex align-items-center">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.name }}</span>
@@ -26,7 +26,7 @@
   </ng-template>
 
   <ng-template #contactColumn let-lead="row">
-    <div class="d-flex align-items-center">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.phone }}</span>
@@ -46,7 +46,7 @@
 
 
   <ng-template #emailColumn let-lead="row">
-    <div class="d-flex align-items-center">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.email }}</span>
@@ -65,7 +65,7 @@
   </ng-template>
 
   <ng-template #codeColumn let-lead="row">
-    <div class="d-flex align-items-center">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.code }}</span>
@@ -84,7 +84,7 @@
   </ng-template>
 
   <ng-template #statusColumn let-lead="row">
-    <div class="d-flex align-items-center">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <button class="btn btn-large btn-success-active">{{ lead.status | optionLabel }}</button>
@@ -103,7 +103,7 @@
   </ng-template>
 
   <ng-template #viewColumn let-lead="row">
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
           <button class="btn btn-large btn-success">View Lead</button>

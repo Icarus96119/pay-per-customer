@@ -1,8 +1,13 @@
-<div class="form-group m-0" [class.label-input-group]="label">
+<div class="form-group bg-white rounded m-0" [class.label-input-group]="label">
   <div class="form-label select-wrapper" [class.readonly]="readonly">
-    <select class="form-control p-10 height-44" [(ngModel)]="value" (ngModelChange)="change($event)" (mousedown)="clicked($event)">
-      <option disabled selected hidden value="">{{ placeholder }}</option>
-      <option [value]="option.value" [disabled]="readonly" *ngFor="let option of options">{{ option.label }}</option>
-    </select>
+    <div class="d-flex">
+      <div class="d-flex align-items-center pl-10" *ngIf="label">
+        <span class="color-dusty-gray">{{ label }}</span>
+      </div>
+      <select [class.pl-0]="label" [class.pl-10]="!label" class="form-control py-10 pr-10 height-44" [(ngModel)]="value" (ngModelChange)="change($event)" (mousedown)="clicked($event)">
+        <option disabled selected hidden value="">{{ placeholder }}</option>
+        <option [value]="option.value" [disabled]="readonly" *ngFor="let option of options">{{ option.label }}</option>
+      </select>
+    </div>
   </div>
 </div>

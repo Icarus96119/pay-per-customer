@@ -1,5 +1,9 @@
 @import "../../../../assets/theme";
 
+span {
+  white-space: pre;
+}
+
 select {
   border: 0 !important;
   color: $astronaut;
