@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { FormBuilder, FormGroup } from '@angular/forms';
+
 import { Option } from '../../core/models/option';
 
 @Component({

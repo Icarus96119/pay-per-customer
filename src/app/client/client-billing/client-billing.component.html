@@ -15,7 +15,7 @@
       <app-billing-detail-card [card]="card" [user]="normalUser"></app-billing-detail-card>
     </div>
   </div>
-  <div class="row mb-10">
+  <div class="row mb-20">
     <div class="col-12">
       <div class="d-md-flex d-none justify-content-between align-items-center border-color-silver border-bottom-1">
         <h3 class="text-primary font-20 font-weight-bold m-0">Payment History</h3>
@@ -29,6 +29,17 @@
           <div class="balance px-30 py-10 border-radius-5">Balance: -$721.00</div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <form class="col-12 col-md-9 mb-10 mb-md-0" [formGroup]="paymentForm">
+      <div class="d-flex align-items-center">
+        <app-select class="mr-10" label="Sort By:" [options]="options" formControlName="sortByDate"></app-select>
+        <app-search-input placeholder="Search Transaction"></app-search-input>
+      </div>
+    </form>
+    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
     </div>
   </div>
 </section>

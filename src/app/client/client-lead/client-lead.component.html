@@ -8,7 +8,7 @@
     <form class="col-12 col-md-9 mb-10 mb-md-0" [formGroup]="leadForm">
       <div class="d-flex align-items-center">
         <app-icon-button class="mr-10" buttonClass="btn-primary-active" icon="plus" color="white" label="New Lead"></app-icon-button>
-        <app-select class="mr-10" [options]="options" formControlName="sortByDate"></app-select>
+        <app-select class="mr-10" label="Sort By:" [options]="options" formControlName="sortByDate"></app-select>
         <app-search-input placeholder="Search Transaction"></app-search-input>
       </div>
     </form>

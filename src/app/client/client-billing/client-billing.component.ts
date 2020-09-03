@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { CreditCard } from '../../core/models/payment';
 import { normalUser } from '../../core/data/consts';
+import { Option } from '../../core/models/option';
 
 @Component({
   selector: 'app-client-billing',
@@ -9,6 +11,14 @@ import { normalUser } from '../../core/data/consts';
   styleUrls: ['./client-billing.component.scss']
 })
 export class ClientBillingComponent implements OnInit {
+
+  options: Option<string>[] = [
+    { value: 'today', label: 'Today'},
+  ];
+
+  paymentForm: FormGroup = this.fb.group({
+    sortByDate: '',
+  });
 
   card: CreditCard = {
     cardHolderName: '',
@@ -20,9 +30,15 @@ export class ClientBillingComponent implements OnInit {
   }
   normalUser = normalUser;
 
-  constructor() { }
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  filter(event): void {
+    alert('Filter Working');
   }
 
 }
