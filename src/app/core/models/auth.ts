@@ -15,6 +15,7 @@ export interface User extends Entity {
   isEmailVerified?: boolean;
   role?: UserRole;
   name?: string;
+  address?: string;
   businessName?: string;
   phone?: string;
   creditCard?: CreditCard;

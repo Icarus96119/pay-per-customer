@@ -1,3 +1,18 @@
 <section class="p-15 p-md-30">
-  <p>client-billing works!</p>
+  <div class="row mb-10">
+    <div class="col-12">
+      <h3 class="text-primary font-30 font-weight-bold">Billing</h3>
+    </div>
+  </div>
+  <div class="row mb-10">
+    <div class="col-12 col-lg-3">
+      <app-next-billing-card price="500" text="Automatic Renewal"></app-next-billing-card>
+    </div>
+    <div class="col-12 col-lg-4">
+      <app-plan-detail-card billingCycle="Weekly" startDate="March 21, 2020" status="Active"></app-plan-detail-card>
+    </div>
+    <div class="col-12 col-lg-5">
+      <app-billing-detail-card [card]="card" [user]="normalUser"></app-billing-detail-card>
+    </div>
+  </div>
 </section>

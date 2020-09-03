@@ -5,7 +5,8 @@ export const normalUser: User = {
   email: 'abc@gmail.com',
   businessName: 'ABC LTD',
   name: 'Jonathan Jones',
-  phone: '654646464'
+  phone: '654646464',
+  address: '3250 Bloor Street West, Suit 600.'
 };
 
 export const homeStatusCards = [

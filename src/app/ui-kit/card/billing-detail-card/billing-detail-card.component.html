@@ -1,0 +1,29 @@
+<div class="bg-white rounded shadow px-20 py-10 mb-10">
+  <div class="row mb-10">
+    <div class="col-6">
+      <div class="d-flex flex-column">
+        <span class="font-weight-medium text-primary text-overflow mb-10">Plan Details</span>
+        <div class="d-flex mb-5">
+          <img class="height-30" src="assets/images/icons/payment-card/{{ card.cardName }}.svg" [alt]="card">
+        </div>
+        <span class="font-weight-medium text-primary text-overflow">{{ card.cardNumber }}</span>
+        <span class="font-weight-medium text-primary text-overflow">{{ card.yy }}</span>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="d-flex flex-column">
+        <span class="font-weight-medium text-primary text-overflow mb-5">Billing Address</span>
+        <span class="font-weight-medium color-dusty-gray mb-10">{{ user.address }}</span>
+        <span class="font-weight-medium text-primary text-overflow mb-5">Phone</span>
+        <span class="font-weight-medium color-dusty-gray text-overflow mb-10">{{ user.phone }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-end">
+        <a class="text-primary">+ Add Another Card</a>
+      </div>
+    </div>
+  </div>
+</div>
