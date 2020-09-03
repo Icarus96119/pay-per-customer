@@ -8,7 +8,6 @@ import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
 import { Subscription, SubscriptionStatus } from '../../../core/models/subscription';
 import { allCampaignSubscriptions } from '../../../core/data/subscription';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-subscription-table',

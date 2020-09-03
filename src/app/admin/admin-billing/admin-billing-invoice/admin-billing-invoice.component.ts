@@ -15,7 +15,7 @@ export class AdminBillingInvoiceComponent implements OnInit {
     { value: 'None', label: 'No Invoice'}
   ];
 
-  leadForm: FormGroup = this.fb.group({
+  invoiceForm: FormGroup = this.fb.group({
     invoiceType: '',
   });
 

@@ -3,7 +3,9 @@ import { CampaignType } from '../models/campaign';
 
 export const normalUser: User = {
   email: 'abc@gmail.com',
-  businessName: 'ABC LTD'
+  businessName: 'ABC LTD',
+  name: 'Jonathan Jones',
+  phone: '654646464'
 };
 
 export const homeStatusCards = [

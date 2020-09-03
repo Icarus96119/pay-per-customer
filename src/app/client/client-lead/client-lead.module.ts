@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { ButtonModule } from '../../ui-kit/button/button.module';
 import { InputModule } from '../../ui-kit/input/input.module';
+import { LeadTableModule } from '../../ui-kit/table/lead-table/lead-table.module';
 
 import { ClientLeadRoutingModule } from './client-lead-routing.module';
 
@@ -19,6 +20,7 @@ import { ClientLeadComponent } from './client-lead.component';
     ReactiveFormsModule,
     ButtonModule,
     InputModule,
+    LeadTableModule,
     ClientLeadRoutingModule
   ]
 })

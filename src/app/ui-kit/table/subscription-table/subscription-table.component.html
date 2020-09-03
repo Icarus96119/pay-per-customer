@@ -10,17 +10,17 @@
     <div class="d-flex justify-content-center align-items-center">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <button class="btn btn-big btn-warning-active height-40">
+          <button class="btn btn-large btn-warning-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <button class="btn btn-big btn-danger-active height-40">
+          <button class="btn btn-large btn-danger-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <button class="btn btn-big btn-success-active height-40">
+          <button class="btn btn-large btn-success-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>

@@ -39,14 +39,24 @@
       color: white;
     }
   }
+  &-info {
+    border: solid 1px $fountain-blue;
+    background: transparent;
+    color: $fountain-blue;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $fountain-blue;
+      color: white;
+    }
+  }
 }
 
-.btn-big {
+.btn-large {
   min-width: 100px;
   font-size: 12px;
 }
 
-.btn-normal {
+.btn-medium {
   min-width: 70px;
   font-size: 12px;
 }

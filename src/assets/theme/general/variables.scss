@@ -14,12 +14,14 @@ $blue-romance: #D1F4D9;
 $humming-bird: #D0F3F8;
 $peach: #FFE4BC;
 $cosmos: #FED6DB;
+$fountain-blue: #5897BF;
 
 $theme-colors: (
   primary: $astronaut,
   success: $vista-blue,
   warning: $equator,
-  danger: $shilo
+  danger: $shilo,
+  info: $fountain-blue
 );
 
 // Headings
@@ -37,7 +39,7 @@ $pixel-spacer: 1px !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 @for $i from 1 through 500 {
   $spacers: map-merge($spacers, (
-    $i: ($i * $pixel-spacer)
+          $i: ($i * $pixel-spacer)
   ));
 }
 
@@ -56,7 +58,11 @@ $nav-tabs-link-hover-border-color: white white white;
 $nav-tabs-link-active-color: white;
 $nav-tabs-link-active-border-color: white white white;
 
- //Dropdowns
+// Cards
+$card-border-radius: 3px;
+$card-border-width: 0;
+
+//Dropdowns
 $dropdown-min-width: 14.38rem;
 $dropdown-padding-y: 0;
 $dropdown-font-size: 12px;

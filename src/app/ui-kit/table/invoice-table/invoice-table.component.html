@@ -14,7 +14,7 @@
 
   <ng-template #statusColumn let-invoice="row">
     <div class="d-flex justify-content-center align-items-center">
-      <button class="btn btn-normal height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
+      <button class="btn btn-medium height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
         {{ invoice.status | optionLabel }}
       </button>
     </div>
@@ -77,10 +77,10 @@
   <ng-template #payColumn let-invoice="row">
     <div class="d-flex justify-content-center">
       <div class="d-flex max-width-200 min-width-150 justify-content-center justify-content-md-start">
-        <button class="btn btn-normal height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
+        <button class="btn btn-medium height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
           PDF
         </button>
-        <button class="btn btn-normal btn-danger-active height-40 ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
+        <button class="btn btn-medium btn-danger-active height-40 ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
       </div>
     </div>
   </ng-template>

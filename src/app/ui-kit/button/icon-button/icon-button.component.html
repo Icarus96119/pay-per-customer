@@ -1,4 +1,4 @@
-<button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" class="btn btn-big height-40 py-0" [ngClass]="buttonClass">
+<button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" class="btn btn-large height-40 py-0" [ngClass]="buttonClass">
   <div class="d-flex align-items-center">
     <app-icon class="mr-5" [icon]="icon" color="{{ isHover ? 'white' : color }}"></app-icon>
     <span class="font-14">{{ label }}</span>

@@ -1,0 +1,123 @@
+<app-table [rows]="campaignSubscriptions"
+           [columns]="columns"
+           [pageSize]="take"
+           [length]="total"
+           [loading]="isLoading"
+           (page)="onPage($event)"
+           emptyDescription="No invoices to display.">
+
+  <ng-template #nameColumn let-lead="row">
+    <div class="d-flex align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.name }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.name }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.name }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.name }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #contactColumn let-lead="row">
+    <div class="d-flex align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.phone }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.phone }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.phone }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.phone }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+
+  <ng-template #emailColumn let-lead="row">
+    <div class="d-flex align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.email }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.email }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.email }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.email }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #codeColumn let-lead="row">
+    <div class="d-flex align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.code }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.code }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.code }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.code }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #statusColumn let-lead="row">
+    <div class="d-flex align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <button class="btn btn-large btn-success-active">{{ lead.status | optionLabel }}</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <button class="btn btn-large btn-danger-active">{{ lead.status | optionLabel }}</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <button class="btn btn-large btn-warning-active">{{ lead.status | optionLabel }}</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <button class="btn btn-large btn-info-active">{{ lead.status | optionLabel }}</button>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #viewColumn let-lead="row">
+    <div class="d-flex justify-content-center align-items-center">
+      <ng-container [ngSwitch]="lead.status">
+        <ng-container *ngSwitchCase="LeadStatus.Sold">
+          <button class="btn btn-large btn-success">View Lead</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
+          <button class="btn btn-large btn-danger">View Lead</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Spam">
+          <button class="btn btn-large btn-warning">View Lead</button>
+        </ng-container>
+        <ng-container *ngSwitchCase="LeadStatus.Pending">
+          <button class="btn btn-large btn-info">View Lead</button>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+</app-table>

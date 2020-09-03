@@ -10,7 +10,7 @@
   <div class="d-flex justify-content-between align-items-center" *ngIf="!isHeaderColumn">
     <h3 class="font-20 font-weight-medium m-0">{{ title }}s</h3>
     <div class="d-flex" *ngIf="canAdd; else noAdd">
-      <button class="btn btn-big btn-primary-active">Add {{title}}</button>
+      <button class="btn btn-large btn-primary-active">Add {{title}}</button>
     </div>
     <ng-template #noAdd>
       <div class="d-flex">
