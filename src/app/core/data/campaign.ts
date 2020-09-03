@@ -1,327 +1,327 @@
 import { Campaign } from '../models/campaign';
-import { normalCustomer } from './consts';
+import { normalUser } from './consts';
 
 export const allCampaigns: Campaign[] = [
   {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   },{
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,
     daysSinceLastTopUp: 1
   }, {
-    customer: normalCustomer,
+    user: normalUser,
     paymentsTotal: 500,
     maxAdSpend: 200,
     numberOfTopUps: 2,

@@ -14,7 +14,7 @@ export interface Invoice extends Entity {
   status: InvoiceStatus;
   amount : number;
   serialId: string;
-  customer: User;
+  user: User;
   issuedOn: string;
   paidOn: string;
   paymentRetry: string;

@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
+import { CommonUiKitModule } from '../common-ui-kit/common-ui-kit.module';
+
 import { TableComponent } from './table.component';
-import { SubscriptionTableComponent } from './subscription-table/subscription-table.component';
+
 @NgModule({
   declarations: [
     TableComponent,
   ],
   imports: [
     CommonModule,
+    CommonUiKitModule,
     MatPaginatorModule,
   ],
   exports: [

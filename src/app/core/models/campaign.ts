@@ -9,12 +9,12 @@ export enum CampaignType {
   CampaignBuild = 'CAMPAIGN_BUILD',
   InternalApproval = 'INTERNAL_APPROVAL',
   Live = 'LIVE',
-  Paused = 'PAUSED',
+  // Paused = 'PAUSED',
   Lost = 'LOST',
 }
 
 export interface Campaign extends Entity {
-  customer: User;
+  user: User;
   paymentsTotal: number;
   maxAdSpend: number;
   numberOfTopUps: number;

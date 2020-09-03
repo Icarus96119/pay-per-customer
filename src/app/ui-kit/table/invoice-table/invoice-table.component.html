@@ -33,9 +33,9 @@
   <ng-template #customerInfoColumn let-invoice="row">
     <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold mb-1" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
-        {{ invoice.customer.businessName }}</span>
+        {{ invoice.user.businessName }}</span>
       <p class="font-12 text-overflow m-0" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : 'color-dusty-gray'">
-        {{ invoice.customer.email }}</p>
+        {{ invoice.user.email }}</p>
     </div>
   </ng-template>
 

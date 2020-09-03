@@ -7,3 +7,8 @@ export interface TableColumn {
   templateRef?: TemplateRef<any>;
   // TODO: additional fields
 }
+
+export interface TableSection {
+  header: string;
+  rows: Array<any>;
+}

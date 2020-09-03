@@ -1,0 +1,46 @@
+<div class="table-header d-flex justify-content-between align-items-center bg-color-gallery font-12 px-15" *ngIf="isHeaderColumn; else noHeader">
+  <div *ngFor="let column of columns; let i = index;" [style.width]="column.width" [class.flex-grow-1]="!column.width">
+    <p class="text-overflow m-0 d-none d-md-block pr-20 pr-lg-0" *ngIf="i < columns.length - 1; else last">{{ column.label }}</p>
+    <ng-template #last>
+      <p class="text-overflow m-0 d-none d-md-block pr-0">{{ column.label }}</p>
+    </ng-template>
+  </div>
+</div>
+<ng-template #noHeader>
+  <div class="d-flex justify-content-between align-items-center" *ngIf="!isHeaderColumn">
+    <h3 class="font-20 font-weight-medium m-0">{{ title }}s</h3>
+    <div class="d-flex" *ngIf="canAdd; else noAdd">
+      <button class="btn btn-big btn-primary-active">Add {{title}}</button>
+    </div>
+    <ng-template #noAdd>
+      <div class="d-flex">
+        <span>See All</span>
+      </div>
+    </ng-template>
+  </div>
+</ng-template>
+
+<div class="position-relative">
+  <div *ngFor="let section of sections; let first = first">
+    <div class="d-flex px-15 py-5" *ngIf="!first">
+      <span class="color-dusty-gray">{{ section.header }}</span>
+    </div>
+    <div *ngFor="let row of section.rows">
+      <div class="table-row d-flex flex-column flex-md-row justify-content-between align-items-center bg-white my-10 text-center text-md-left px-15 border-radius-5 cursor-pointer">
+        <div class="py-5" *ngFor="let column of columns" [style.width]="column.width" [class.flex-grow-1]="!column.width">
+
+          <ng-container *ngIf="column.templateRef">
+            <ng-template [ngTemplateOutlet]="column.templateRef" [ngTemplateOutletContext]="{row: row}"></ng-template>
+          </ng-container>
+
+          <ng-container *ngIf="!column.templateRef">
+            <span>{{ row[column.name] }}</span>
+          </ng-container>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-spinner [diameter]="20" *ngIf="loading"></app-spinner>
+</div>
+

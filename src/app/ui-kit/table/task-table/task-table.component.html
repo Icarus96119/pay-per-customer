@@ -1,0 +1,28 @@
+<app-heading-table [title]="title"
+           [canAdd]="canAdd"
+           [sections]="tasks"
+           [columns]="columns"
+           [loading]="isLoading"
+           emptyDescription="No invoices to display.">
+
+  <ng-template #checkColumn let-task="row">
+    <div class="d-flex justify-content-center align-items-center">
+      <app-checkbox [value]="task.isCarriedOut"></app-checkbox>
+    </div>
+  </ng-template>
+
+  <ng-template #detailColumn let-task="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold mb-1">{{ task.title }}</span>
+      <p class="font-12 text-overflow m-0 color-dusty-gray">{{ task.user.businessName }}</p>
+    </div>
+  </ng-template>
+
+  <ng-template #createdAtColumn let-task="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold"
+            [ngClass]="task.isCarriedOut ? 'text-success' : 'text-danger'">{{ task.createdAt }}</span>
+    </div>
+  </ng-template>
+
+</app-heading-table>

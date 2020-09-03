@@ -32,16 +32,16 @@
     <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.customer.businessName }}</span>
-          <p class="font-12 text-overflow text-warning m-0">{{ campaignSubscription.customer.email }}</p>
+          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.user.businessName }}</span>
+          <p class="font-12 text-overflow text-warning m-0">{{ campaignSubscription.user.email }}</p>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.customer.businessName }}</span>
-          <p class="font-12 text-overflow text-danger m-0">{{ campaignSubscription.customer.email }}</p>
+          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.user.businessName }}</span>
+          <p class="font-12 text-overflow text-danger m-0">{{ campaignSubscription.user.email }}</p>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.customer.businessName }}</span>
-          <p class="font-12 text-overflow text-success m-0">{{ campaignSubscription.customer.email }}</p>
+          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.user.businessName }}</span>
+          <p class="font-12 text-overflow text-success m-0">{{ campaignSubscription.user.email }}</p>
         </ng-container>
       </ng-container>
     </div>

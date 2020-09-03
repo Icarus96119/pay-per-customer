@@ -10,7 +10,7 @@ export enum SubscriptionStatus {
 
 export interface Subscription extends Entity {
   status: SubscriptionStatus;
-  customer: User;
+  user: User;
   paymentMethod: PaymentMethod;
   nextRenewal: string;
   renewalAmount : number;
