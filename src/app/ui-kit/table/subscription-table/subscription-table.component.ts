@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 
 import { TableComponent } from '../table.component';
@@ -32,7 +32,7 @@ export class SubscriptionTableComponent implements OnInit {
 
   columns: TableColumn[];
   isLoading = false;
-  total = 0;
+  total = allCampaignSubscriptions.length;
   skip = 0;
   take = PageSizeDefault;
   campaignSubscriptions: Subscription[] = [];
@@ -44,7 +44,7 @@ export class SubscriptionTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.columns = [
-      { label: 'Status', templateRef: this.statusColumn, width: '150px' },
+      { label: 'Status', templateRef: this.statusColumn, width: '130px' },
       { label: 'Business Name', templateRef: this.businessNameColumn, width: '15%' },
       { label: 'Payment Method', templateRef: this.paymentMethodColumn, width: '15%' },
       { label: 'Next Renewal', templateRef: this.nextRenewalColumn, width: '15%'},

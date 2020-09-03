@@ -7,21 +7,21 @@
                emptyDescription="No invoices to display.">
 
   <ng-template #checkColumn let-invoice="row">
-    <div class="d-flex justify-content-center align-items-center pr-0 pr-lg-20">
+    <div class="d-flex justify-content-center align-items-center">
       <app-checkbox></app-checkbox>
     </div>
   </ng-template>
 
   <ng-template #statusColumn let-invoice="row">
-    <div class="d-flex justify-content-center align-items-center pr-0 pr-lg-20">
-      <button class="btn btn-small height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
+    <div class="d-flex justify-content-center align-items-center">
+      <button class="btn btn-normal height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
         {{ invoice.status | optionLabel }}
       </button>
     </div>
   </ng-template>
 
   <ng-template #amountColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold mb-1" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.amount | currency }}</span>
       <p class="font-12 text-overflow m-0" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : 'color-dusty-gray'">
@@ -31,7 +31,7 @@
 
 
   <ng-template #customerInfoColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold mb-1" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.customer.businessName }}</span>
       <p class="font-12 text-overflow m-0" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : 'color-dusty-gray'">
@@ -40,35 +40,35 @@
   </ng-template>
 
   <ng-template #issuedOnColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.issuedOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #paidOnColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.paidOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentRetryColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.paymentRetry }}</span>
     </div>
   </ng-template>
 
   <ng-template #voidedOnColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.voidedOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #typeColumn let-invoice="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
         {{ invoice.Type | optionLabel }}</span>
     </div>
@@ -77,10 +77,10 @@
   <ng-template #payColumn let-invoice="row">
     <div class="d-flex justify-content-center">
       <div class="d-flex max-width-200 min-width-150 justify-content-center justify-content-md-start">
-        <button class="btn btn-small height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
+        <button class="btn btn-normal height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
           PDF
         </button>
-        <button class="btn btn-small btn-danger-active height-40 ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
+        <button class="btn btn-normal btn-danger-active height-40 ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
       </div>
     </div>
   </ng-template>

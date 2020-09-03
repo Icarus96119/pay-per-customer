@@ -1,0 +1,330 @@
+import { Campaign } from '../models/campaign';
+import { normalCustomer } from './consts';
+
+export const allCampaigns: Campaign[] = [
+  {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  },{
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }, {
+    customer: normalCustomer,
+    paymentsTotal: 500,
+    maxAdSpend: 200,
+    numberOfTopUps: 2,
+    daysSinceLastTopUp: 1
+  }
+]

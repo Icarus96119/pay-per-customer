@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 
 import { TableComponent } from '../table.component';
@@ -35,7 +35,7 @@ export class InvoiceTableComponent implements OnInit {
 
   columns: TableColumn[];
   isLoading = false;
-  total = 0;
+  total = allInvoices.length
   skip = 0;
   take = PageSizeDefault;
   invoices: Invoice[] = [];
@@ -47,13 +47,13 @@ export class InvoiceTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.columns = [
-      { templateRef: this.checkColumn, width: '60px' },
-      { label: 'Status', templateRef: this.statusColumn, width: '150px' },
+      { label: ' ', templateRef: this.checkColumn, width: '60px' },
+      { label: 'Status', templateRef: this.statusColumn, width: '120px' },
       { label: 'Invoice', templateRef: this.amountColumn, width: '15%' },
       { label: 'Customer Info', templateRef: this.customerInfoColumn, width: '15%' },
       { label: 'Issued On', templateRef: this.issuedOnColumn, width: '10%'},
-      { label: 'Paid On', templateRef: this.paidOnColumn, width: '10%' },
-      { label: 'Payment Retry', templateRef: this.paymentRetryColumn, width: '15%' },
+      { label: 'Paid On', templateRef: this.paidOnColumn, width: '15%' },
+      { label: 'Payment Retry', templateRef: this.paymentRetryColumn, width: '10%' },
       { label: 'Voided On', templateRef: this.voidedOnColumn, width: '10%' },
       { label: 'Type', templateRef: this.typeColumn, width: '10%' },
       { templateRef: this.payColumn, width: '200px' },

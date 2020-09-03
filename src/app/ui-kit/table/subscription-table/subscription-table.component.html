@@ -1,26 +1,26 @@
 <app-table [rows]="campaignSubscriptions"
            [columns]="columns"
            [pageSize]="take"
-           [length]="allCampaignSubscriptions.length"
+           [length]="total"
            [loading]="isLoading"
            (page)="onPage($event)"
            emptyDescription="No invoices to display.">
 
   <ng-template #statusColumn let-campaignSubscription="row">
-    <div class="d-flex justify-content-center align-items-center pr-0 pr-lg-20">
+    <div class="d-flex justify-content-center align-items-center">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <button class="btn btn-normal btn-warning-active height-40">
+          <button class="btn btn-big btn-warning-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <button class="btn btn-normal btn-danger-active height-40">
+          <button class="btn btn-big btn-danger-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <button class="btn btn-normal btn-success-active height-40">
+          <button class="btn btn-big btn-success-active height-40">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
@@ -29,7 +29,7 @@
   </ng-template>
 
   <ng-template #businessNameColumn let-campaignSubscription="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.customer.businessName }}</span>
@@ -48,7 +48,7 @@
   </ng-template>
 
   <ng-template #paymentMethodColumn let-campaignSubscription="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.paymentMethod | optionLabel }}</span>
@@ -64,7 +64,7 @@
   </ng-template>
 
   <ng-template #nextRenewalColumn let-campaignSubscription="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.nextRenewal }}</span>
@@ -80,7 +80,7 @@
   </ng-template>
 
   <ng-template #renewalAmountColumn let-campaignSubscription="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
@@ -96,7 +96,7 @@
   </ng-template>
 
   <ng-template #numberOfRenewalsColumn let-campaignSubscription="row">
-    <div class="d-flex flex-column pr-0 pr-lg-20">
+    <div class="d-flex flex-column">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.numberOfRenewals }}</span>
@@ -112,7 +112,7 @@
   </ng-template>
 
   <ng-template #editColumn let-campaignSubscription="row">
-    <div class="d-flex justify-content-center align-items-center pr-0 pr-lg-20">
+    <div class="d-flex justify-content-center align-items-center pr-0">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
           <app-icon-button icon="edit" color="warning" buttonClass="btn-edit-warning" label="Edit Subscription"></app-icon-button>

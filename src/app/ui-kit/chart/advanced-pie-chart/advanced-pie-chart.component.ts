@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { chartColorSchema } from '../../../core/data/consts';
 import { ChartItem } from '../../../core/models/base';
 
 @Component({

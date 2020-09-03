@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+import { enumToOptions } from '../../core/utils/enum.util';
+import { CampaignType } from '../../core/models/campaign';
 
 @Component({
   selector: 'app-campaign',
@@ -7,7 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminCampaignComponent implements OnInit {
 
-  constructor() { }
+  campaignOptions = enumToOptions<CampaignType>(CampaignType, null, true);
+
+  campaignForm: FormGroup = this.fb.group({
+    campaignType: '',
+  });
+
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit(): void {
   }
