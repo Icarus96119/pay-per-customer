@@ -4,3 +4,8 @@ export interface Entity {
   createdAt?: string;
   updatedAt?: string;
 }
+
+export interface ChartItem {
+  name: string;
+  value: number;
+}

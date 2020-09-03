@@ -1,0 +1,61 @@
+@import "../../../../assets/theme";
+
+.btn-filter {
+  background: transparent;
+  border: solid 1px $dusty-gray;
+  span {
+    color: $astronaut;
+  }
+
+  &:hover {
+    border: solid 1px $astronaut;
+    background: $astronaut;
+    span {
+      color: white;
+    }
+  }
+}
+
+.btn-plus {
+  background: $astronaut;
+  span {
+    color: white;
+  }
+}
+
+.btn-edit {
+  border: solid 1px $astronaut;
+  background: transparent;
+  color: $astronaut;
+
+  &-warning {
+    border: solid 1px $equator;
+    background: transparent;
+    color: $equator;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $equator;
+      color: white;
+    }
+  }
+  &-danger {
+    border: solid 1px $shilo;
+    background: transparent;
+    color: $shilo;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $shilo;
+      color: white;
+    }
+  }
+  &-success {
+    border: solid 1px $vista-blue;
+    background: transparent;
+    color: $vista-blue;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $vista-blue;
+      color: white;
+    }
+  }
+}

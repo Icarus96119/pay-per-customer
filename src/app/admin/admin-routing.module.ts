@@ -20,7 +20,7 @@ const routes: Routes = [
         path: ROUTES.admin.appointment,
         loadChildren: () => import('./admin-appointment/admin-appointment.module').then(m => m.AdminAppointmentModule)
       }, {
-        path: ROUTES.admin.billing,
+        path: ROUTES.admin.billing.root,
         loadChildren: () => import('./admin-billing/admin-billing.module').then(m => m.AdminBillingModule)
       }, {
         path: ROUTES.admin.campaign,

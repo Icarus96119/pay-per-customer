@@ -1,0 +1,19 @@
+<section>
+  <div class="row align-items-center">
+    <form class="col-12 col-md-7" [formGroup]="invoiceForm">
+      <div class="d-flex align-items-center">
+        <app-icon-button class="mr-10" color="white" icon="plus" buttonClass="btn-plus" (handleClick)="filter($event)" label="Create Subscription"></app-icon-button>
+        <app-select class="mr-10" [options]="options" formControlName="invoiceType"></app-select>
+        <app-search-input placeholder="Search Invoice"></app-search-input>
+      </div>
+    </form>
+    <div class="col-12 col-md-5 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <app-subscription-table></app-subscription-table>
+    </div>
+  </div>
+</section>

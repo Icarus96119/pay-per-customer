@@ -1,0 +1,1 @@
+export const chartColorSchema = { domain: ['#07A39D', '#DA3E51', '#F18F01', '#106d2f', '#D1F4D9', '#D0F3F8', '#FED6DB', '#D97070', '#9CDAD8', '#841E30'] };

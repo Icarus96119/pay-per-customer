@@ -29,6 +29,13 @@
   }
 }
 
+@mixin flex($segment, $size) {
+  flex: 0 0 $size;
+  #{$segment}: $size;
+  min-#{$segment}: $size;
+  max-#{$segment}: $size;
+}
+
 @mixin circle($size) {
   display: inline-block;
   width: $size;

@@ -17,4 +17,16 @@
   .border-#{$i} {
     border: solid #{$i}px;
   }
+  .border-left-#{$i} {
+    border-left: solid #{$i}px;
+  }
+  .border-right-#{$i} {
+    border-right: solid #{$i}px;
+  }
+  .border-top-#{$i} {
+    border-top: solid #{$i}px;
+  }
+  .border-bottom-#{$i} {
+    border-bottom: solid #{$i}px;
+  }
 }

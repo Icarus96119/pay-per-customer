@@ -21,13 +21,13 @@ export class AdminLayoutComponent implements OnInit, AfterViewInit {
   ROUTES = ROUTES;
   menus = [
     { icon: 'home', label: 'Home', route: ROUTES.admin.home },
-    { icon: 'campaigns', label: 'Campaigns', route: ROUTES.admin.campaign },
+    { icon: 'speaker', label: 'Campaigns', route: ROUTES.admin.campaign },
     { icon: 'email', label: 'Email & Chat', route: ROUTES.admin.email },
-    { icon: 'tasks', label: 'Tasks', route: ROUTES.admin.task },
-    { icon: 'appointments', label: 'Appointments', route: ROUTES.admin.appointment },
-    { icon: 'billing', label: 'Billing', route: ROUTES.admin.billing },
-    { icon: 'agreements', label: 'Agreements', route: ROUTES.admin.agreement },
-    { icon: 'reports', label: 'Reports', route: ROUTES.admin.report },
+    { icon: 'task', label: 'Tasks', route: ROUTES.admin.task },
+    { icon: 'appointment', label: 'Appointments', route: ROUTES.admin.appointment },
+    { icon: 'billing', label: 'Billing', route: ROUTES.admin.billing.root },
+    { icon: 'agreement', label: 'Agreements', route: ROUTES.admin.agreement },
+    { icon: 'report', label: 'Reports', route: ROUTES.admin.report },
   ];
   constructor(
     private adminLayoutService: AdminLayoutService

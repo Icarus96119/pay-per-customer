@@ -1,21 +1,64 @@
 .btn.btn {
   &-primary {
-    background: $astronaut;
-    color: white;
+    border: solid 1px $astronaut;
+    background: transparent;
+    color: $astronaut;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $astronaut;
+      color: white;
+    }
   }
   &-warning {
-    background: $equator;
-    color: white;
+    border: solid 1px $equator;
+    background: transparent;
+    color: $equator;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $equator;
+      color: white;
+    }
+  }
+  &-danger {
+    border: solid 1px $shilo;
+    background: transparent;
+    color: $shilo;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $shilo;
+      color: white;
+    }
   }
   &-success {
-    background: $vista-blue;
-    color: white;
+    border: solid 1px $vista-blue;
+    background: transparent;
+    color: $vista-blue;
+
+    &-active, &:hover, &:focus, &:active {
+      background: $vista-blue;
+      color: white;
+    }
   }
 }
 
 .btn-normal {
-  min-width: 145px;
+  min-width: 100px;
   font-size: 12px;
+}
+
+.btn-small {
+  min-width: 70px;
+  font-size: 12px;
+}
+
+.btn-white {
+  background: white;
+  color: $astronaut;
+
+  &.active {
+    background: $astronaut;
+    color: white;
+  }
 }
 
 

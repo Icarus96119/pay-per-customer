@@ -3,7 +3,11 @@ export const ROUTES = {
     root: 'admin',
     agreement: 'agreement',
     appointment: 'appointment',
-    billing: 'billing',
+    billing: {
+      root: 'billing',
+      invoices: 'invoices',
+      subscriptions: 'subscriptions',
+    },
     campaign: 'campaign',
     email: 'email',
     home: 'home',

@@ -1,0 +1,8 @@
+<div class="form-group m-0" [class.label-input-group]="label">
+  <div class="form-label select-wrapper" [class.readonly]="readonly">
+    <select class="form-control p-10 height-44" [(ngModel)]="value" (ngModelChange)="change($event)" (mousedown)="clicked($event)">
+      <option disabled selected hidden value="">{{ placeholder }}</option>
+      <option [value]="option.value" [disabled]="readonly" *ngFor="let option of options">{{ option.label }}</option>
+    </select>
+  </div>
+</div>

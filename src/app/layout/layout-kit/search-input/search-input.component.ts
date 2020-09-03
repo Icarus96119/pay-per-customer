@@ -3,8 +3,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
-import { ROUTES } from '../../../core/data/routes';
-
 @Component({
   selector: 'app-search-input',
   templateUrl: './search-input.component.html',

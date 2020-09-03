@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { RouteToAbsolutePipe } from './route-to-absolute.pipe';
 import { ColorPipe } from './color.pipe';
 import { TimeAgoPipe } from './time-ago.pipe';
+import { OptionLabelPipe } from './option-label.pipe';
 
 @NgModule({
   declarations: [
     RouteToAbsolutePipe,
     ColorPipe,
-    TimeAgoPipe
+    TimeAgoPipe,
+    OptionLabelPipe
   ],
   imports: [
     CommonModule
@@ -17,7 +19,8 @@ import { TimeAgoPipe } from './time-ago.pipe';
   exports: [
     RouteToAbsolutePipe,
     ColorPipe,
-    TimeAgoPipe
+    TimeAgoPipe,
+    OptionLabelPipe
   ]
 })
 export class PipesModule { }

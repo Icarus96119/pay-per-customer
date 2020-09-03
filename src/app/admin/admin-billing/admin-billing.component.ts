@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { ROUTES } from '../../core/data/routes';
+import { routerToLabel} from '../../core/utils/router.util';
+import { enumToLabel } from '../../core/utils/enum.util';
 
 @Component({
   selector: 'app-billing',
@@ -7,9 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminBillingComponent implements OnInit {
 
-  constructor() { }
+  ROUTES = ROUTES;
+  header = '';
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.header = routerToLabel(this.router);
+  }
+
+  switchHeader(url: string) {
+    this.header = enumToLabel(url);
   }
 
 }

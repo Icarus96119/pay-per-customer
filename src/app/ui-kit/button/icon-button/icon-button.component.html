@@ -1,0 +1,6 @@
+<button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" class="btn btn-normal height-40 py-0" [ngClass]="buttonClass">
+  <div class="d-flex align-items-center">
+    <app-icon class="mr-5" [icon]="icon" color="{{ isHover ? 'white' : color }}"></app-icon>
+    <span class="font-weight-bold font-14">{{ label }}</span>
+  </div>
+  </button>

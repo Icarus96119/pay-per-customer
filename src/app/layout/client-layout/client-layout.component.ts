@@ -20,13 +20,13 @@ export class ClientLayoutComponent implements OnInit, AfterViewInit {
   ScrollPosition = ScrollPosition;
   ROUTES = ROUTES;
   menus = [
-    { icon: 'dashboard', label: 'Dashboard', route: ROUTES.client.dashboard },
-    { icon: 'leads', label: 'Leads', route: ROUTES.client.lead },
-    { icon: 'notifications', label: 'Notifications', route: ROUTES.client.notification },
-    { icon: 'appointments', label: 'Appointments', route: ROUTES.client.appointment },
-    { icon: 'live-chat', label: 'Live Chat', route: ROUTES.client.liveChat },
+    { icon: 'home', label: 'Dashboard', route: ROUTES.client.dashboard },
+    { icon: 'speaker', label: 'Leads', route: ROUTES.client.lead },
+    { icon: 'notification', label: 'Notifications', route: ROUTES.client.notification },
+    { icon: 'appointment', label: 'Appointments', route: ROUTES.client.appointment },
+    { icon: 'chat', label: 'Live Chat', route: ROUTES.client.liveChat },
     { icon: 'billing', label: 'Billing', route: ROUTES.client.billing },
-    { icon: 'my-profile', label: 'My Profile', route: ROUTES.client.myProfile },
+    { icon: 'profile', label: 'My Profile', route: ROUTES.client.myProfile },
   ];
   constructor(
     private clientLayoutService: ClientLayoutService

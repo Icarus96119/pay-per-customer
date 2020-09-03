@@ -6,12 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ColorPipe implements PipeTransform {
 
   colors = {
-    astronaut: '#222E72',
+    primary: '#222E72',
     'dusty-gray': '#999999',
-    equator: '#DECA5B',
-    shilo: '#E7ABAB',
+    warning: '#DECA5B',
+    danger: '#E7ABAB',
     'mine-shaft': '#333333',
-    'vista-blue': '#8BD6C1',
+    success: '#8BD6C1',
     'white-lilac': '#F7F8FC',
   };
 
