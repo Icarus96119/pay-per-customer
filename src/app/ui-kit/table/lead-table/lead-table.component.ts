@@ -34,7 +34,7 @@ export class LeadTableComponent implements OnInit {
   total = allLeads.length;
   skip = 0;
   take = PageSizeDefault;
-  campaignSubscriptions: Lead[] = [];
+  leads: Lead[] = [];
 
   constructor(
     private toastr: ToastrService
@@ -60,7 +60,7 @@ export class LeadTableComponent implements OnInit {
   }
 
   loadContracts(): void {
-    this.campaignSubscriptions = allLeads.slice(this.skip, this.skip + this.take);
+    this.leads = allLeads.slice(this.skip, this.skip + this.take);
   }
 }
 

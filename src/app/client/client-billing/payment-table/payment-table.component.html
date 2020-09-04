@@ -1,0 +1,84 @@
+<app-table [rows]="payments"
+           [columns]="columns"
+           [pageSize]="take"
+           [length]="total"
+           [loading]="isLoading"
+           (page)="onPage($event)"
+           emptyDescription="No invoices to display.">
+
+  <ng-template #indexColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.index }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
+          <span class="font-13 text-overflow font-weight-bold">{{ payment.index }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #paymentNumberColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.paymentNumber }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
+          <span class="font-13 text-overflow font-weight-bold">{{ payment.paymentNumber }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #paymentMethodColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.paymentMethod }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
+          <span class="font-13 text-overflow font-weight-bold">{{ payment.paymentMethod }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #dateTimeColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.dateAndTime }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
+          <span class="font-13 text-overflow font-weight-bold">{{ payment.dateAndTime }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #amountColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.amount }}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
+          <span class="font-13 text-overflow font-weight-bold">{{ payment.amount }}</span>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+  <ng-template #statusColumn let-payment="row">
+    <div class="d-flex flex-column">
+      <ng-container [ngSwitch]="payment.status">
+        <ng-container *ngSwitchCase="PaymentStatus.Completed">
+          <button class="btn btn-large btn-success-active">{{ payment.status | optionLabel }}</button>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-template>
+
+</app-table>
