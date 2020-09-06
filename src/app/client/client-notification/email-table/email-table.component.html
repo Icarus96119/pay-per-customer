@@ -1,0 +1,35 @@
+<app-table [rows]="emails"
+           [columns]="columns"
+           [pageSize]="take"
+           [length]="total"
+           [loading]="isLoading"
+           (page)="onPage($event)"
+           emptyDescription="No invoices to display.">
+
+  <ng-template #createdAtColumn let-sms="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold">{{ sms.createdAt }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #nameColumn let-sms="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold">{{ sms.sender.name }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #phoneNumberColumn let-sms="row">
+    <div class="d-flex flex-column">
+      <span class="font-13 text-overflow font-weight-bold">{{ sms.sender.phone }}</span>
+    </div>
+  </ng-template>
+
+  <ng-template #actionColumn let-sms="row">
+    <div class="d-flex justify-content-center align-items-center pr-0">
+      <button class="btn btn-large btn-primary height-40 mr-10">View</button>
+      <button class="btn btn-large btn-primary height-40 mr-10">Edit</button>
+      <button class="btn btn-large btn-primary height-40 mr-10">Delete</button>
+    </div>
+  </ng-template>
+
+</app-table>

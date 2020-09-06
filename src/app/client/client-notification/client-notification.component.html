@@ -1,4 +1,46 @@
 <section class="p-15 p-md-30">
-  <p>client-notification works!</p>
+  <div class="row align-items-center mb-30">
+    <div class="col-12">
+      <h3 class="text-primary font-30 font-weight-bold">SMS Notifications</h3>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <form class="col-12 col-md-9 mb-10 mb-md-0" [formGroup]="smsForm">
+      <div class="d-flex align-items-center">
+        <app-icon-button class="mr-10" buttonClass="btn-primary-active" icon="plus" color="white" label="Add Alert"></app-icon-button>
+        <app-select class="mr-10" label="Sort By:" [options]="options" formControlName="sortByDate"></app-select>
+        <app-search-input placeholder="Search Transaction"></app-search-input>
+      </div>
+    </form>
+    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <app-sms-table></app-sms-table>
+    </div>
+  </div>
+  <div class="row align-items-center mt-100 mb-30">
+    <div class="col-12">
+      <h3 class="text-primary font-30 font-weight-bold">Email Notifications</h3>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <form class="col-12 col-md-9 mb-10 mb-md-0" [formGroup]="smsForm">
+      <div class="d-flex align-items-center">
+        <app-icon-button class="mr-10" buttonClass="btn-primary-active" icon="plus" color="white" label="Add Alert"></app-icon-button>
+        <app-select class="mr-10" label="Sort By:" [options]="options" formControlName="sortByDate"></app-select>
+        <app-search-input placeholder="Search Transaction"></app-search-input>
+      </div>
+    </form>
+    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+      <app-icon-button color="primary" icon="filter" buttonClass="btn-filter" (handleClick)="filter($event)" label="Filter List"></app-icon-button>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12">
+      <app-email-table></app-email-table>
+    </div>
+  </div>
 </section>
-
