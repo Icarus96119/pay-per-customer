@@ -10,7 +10,6 @@ import { debounceTime, takeUntil } from 'rxjs/operators';
 })
 export class SearchInputComponent implements OnInit, OnDestroy {
 
-  @Input() width = 200;
   @Input() debounceTime = 700;
   @Input() placeholder = 'Enter search keyword...';
   @Output() search: EventEmitter<string> = new EventEmitter<string>();

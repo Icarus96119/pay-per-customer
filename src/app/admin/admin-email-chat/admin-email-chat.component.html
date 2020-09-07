@@ -1,3 +1,40 @@
 <section class="p-15 p-md-30">
-  <p>email-chat works!</p>
+  <div class="row align-items-center mb-30">
+    <div class="col-12 col-lg-5">
+      <h3 class="text-primary font-30 font-weight-bold">Email & Chat</h3>
+    </div>
+    <div class="col-12 col-lg-7">
+      <div class="d-flex justify-content-end">
+        <app-search-input placeholder="Search Emails & Chats" class="mr-10"></app-search-input>
+        <app-icon-button class="mr-10" color="white" icon="plus" buttonClass="btn-plus" (handleClick)="newEmail($event)" label="New Email"></app-icon-button>
+        <app-icon-button color="white" icon="plus" buttonClass="btn-plus" (handleClick)="newChat($event)" label="New Chat"></app-icon-button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="d-flex flex-column">
+        <div class="bg-primary font-17 text-white font-weight-medium py-8 px-20 mb-10 border-radius-5">{{ CommunicationStep.Open }}</div>
+        <div *ngFor="let item of emailChatData[CommunicationStep.Open]">
+          <app-email-chat-card [info]="item"></app-email-chat-card>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="d-flex flex-column">
+        <div class="bg-primary font-17 text-white font-weight-medium py-8 px-20 mb-10 border-radius-5">{{ CommunicationStep.InReview }}</div>
+        <div *ngFor="let item of emailChatData[CommunicationStep.InReview]">
+          <app-email-chat-card [info]="item"></app-email-chat-card>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="d-flex flex-column">
+        <div class="bg-primary font-17 text-white font-weight-medium py-8 px-20 mb-10 border-radius-5">{{ CommunicationStep.Closed }}</div>
+        <div *ngFor="let item of emailChatData[CommunicationStep.Closed]">
+          <app-email-chat-card [info]="item"></app-email-chat-card>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

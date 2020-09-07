@@ -44,3 +44,55 @@ export const tasks: TableSection[] = [
     ]
   }
 ];
+
+export const taskCardData = {
+  OPEN: [
+    {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }, {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }, {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Onboarding for new UX(copy front)',
+      createdAt: 'Due 1 week ago'
+    },
+  ],
+  IN_PROGRESS: [
+    {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }, {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }, {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Onboarding for new UX(copy front)',
+      createdAt: 'Due 1 week ago'
+    },
+  ],
+  COMPLETED: [
+    {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }, {
+      isCarriedOut: false,
+      user: normalUser,
+      title: 'Notification preferences: ability to "apply settings to all of my teams"',
+      createdAt: 'Due 1 week ago'
+    }
+  ]
+}
