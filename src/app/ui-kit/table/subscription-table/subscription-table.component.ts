@@ -6,7 +6,7 @@ import { TableComponent } from '../table.component';
 import { TableColumn } from '../../../core/models/table';
 import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
-import { Subscription, SubscriptionStatus } from '../../../core/models/subscription';
+import { SubscriptionStatus } from '../../../core/models/subscription';
 import { allCampaignSubscriptions } from '../../../core/data/subscription';
 
 @Component({
@@ -35,7 +35,7 @@ export class SubscriptionTableComponent implements OnInit {
   total = allCampaignSubscriptions.length;
   skip = 0;
   take = PageSizeDefault;
-  campaignSubscriptions: Subscription[] = [];
+  campaignSubscriptions = [];
 
   constructor(
     private toastr: ToastrService
@@ -63,6 +63,7 @@ export class SubscriptionTableComponent implements OnInit {
 
   loadContracts(): void {
     this.campaignSubscriptions = allCampaignSubscriptions.slice(this.skip, this.skip + this.take);
+    this.campaignSubscriptions = this.campaignSubscriptions.map(item => { return  { ...item, hover: false } });
   }
 }
 

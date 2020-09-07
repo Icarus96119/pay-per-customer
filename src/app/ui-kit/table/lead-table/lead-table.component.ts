@@ -61,6 +61,7 @@ export class LeadTableComponent implements OnInit {
 
   loadContracts(): void {
     this.leads = allLeads.slice(this.skip, this.skip + this.take);
+    this.leads = this.leads.map(item => { return  { ...item, hover: false } });
   }
 }
 

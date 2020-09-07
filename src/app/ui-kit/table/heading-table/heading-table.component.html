@@ -26,11 +26,12 @@
       <span class="color-silver">{{ section.header }}</span>
     </div>
     <div *ngFor="let row of section.rows">
-      <div class="table-row d-flex flex-column flex-md-row justify-content-between align-items-center bg-white my-10 text-center text-md-left px-15 border-radius-5 cursor-pointer">
+      <div class="table-row d-flex flex-column flex-md-row justify-content-between align-items-center bg-white my-10 text-center text-md-left px-15 border-radius-5 cursor-pointer"
+           (mouseenter)="mouseEnter(row)" (mouseleave)="mouseLeave(row)">
         <div class="py-5" *ngFor="let column of columns" [style.width]="column.width" [class.flex-grow-1]="!column.width">
 
           <ng-container *ngIf="column.templateRef">
-            <ng-template [ngTemplateOutlet]="column.templateRef" [ngTemplateOutletContext]="{row: row}"></ng-template>
+            <ng-template [ngTemplateOutlet]="column.templateRef" [ngTemplateOutletContext]="{ row: row }"></ng-template>
           </ng-container>
 
           <ng-container *ngIf="!column.templateRef">

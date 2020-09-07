@@ -4,22 +4,6 @@ button {
   height: 40px;
 }
 
-.btn-filter {
-  background: transparent;
-  border: solid 1px $dusty-gray;
-  span {
-    color: $astronaut;
-  }
-
-  &:hover {
-    border: solid 1px $astronaut;
-    background: $astronaut;
-    span {
-      color: white;
-    }
-  }
-}
-
 .btn-plus {
   background: $astronaut;
   span {

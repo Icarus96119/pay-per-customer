@@ -61,7 +61,12 @@
 
   <ng-template #editColumn let-campaignSubscription="row">
     <div class="d-flex justify-content-center align-items-center pr-0">
-      <app-icon-button icon="edit" color="primary" buttonClass="btn-primary btn-thin" label="Edit Subscription"></app-icon-button>
+      <ng-container *ngIf="campaignSubscription.hover === true; else noHover;">
+        <app-icon-button icon="edit" color="danger" buttonClass="btn-thin" label="Edit Subscription"></app-icon-button>
+      </ng-container>
+      <ng-template #noHover>
+        <app-icon-button icon="edit" color="primary" buttonClass="btn-thin" label="Edit Subscription"></app-icon-button>
+      </ng-template>
     </div>
   </ng-template>
 

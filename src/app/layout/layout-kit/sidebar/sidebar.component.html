@@ -1,4 +1,4 @@
-<div class="sidebar bg-white shadow" [class.collapsed]="isCollapsed">
+<div class="sidebar bg-white shadow" [class.collapsed]="isCollapsed" (mouseenter)="isCollapsed = false" (mouseleave)="isCollapsed = true">
   <a class="position-absolute z-index-1 right-n10 cursor-pointer btn-collapse d-none d-md-block" (click)="toggle()"><img src="assets/images/icons/collapse.svg" alt="Collapse"></a>
   <div class="d-flex flex-column justify-content-between h-100">
     <ul class="list-unstyled overflow-hidden">

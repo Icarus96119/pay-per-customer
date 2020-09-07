@@ -6,7 +6,7 @@ import { TableComponent } from '../table.component';
 import { TableColumn } from '../../../core/models/table';
 import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
-import { Invoice, InvoiceStatus } from '../../../core/models/invoice';
+import { InvoiceStatus } from '../../../core/models/invoice';
 import { allInvoices } from '../../../core/data/invoices';
 
 @Component({
@@ -38,7 +38,7 @@ export class InvoiceTableComponent implements OnInit {
   total = allInvoices.length;
   skip = 0;
   take = PageSizeDefault;
-  invoices: Invoice[] = [];
+  invoices = [];
 
   constructor(
     private toastr: ToastrService
@@ -69,6 +69,7 @@ export class InvoiceTableComponent implements OnInit {
 
   loadContracts(): void {
     this.invoices = allInvoices.slice(this.skip, this.skip + this.take);
+    this.invoices = this.invoices.map(item => { return  { ...item, hover: false } });
   }
 }
 

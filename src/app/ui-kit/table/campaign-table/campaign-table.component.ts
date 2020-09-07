@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PageEvent } from '@angular/material/paginator';
 
 import { TableComponent } from '../table.component';
@@ -6,7 +7,6 @@ import { TableComponent } from '../table.component';
 import { TableColumn } from '../../../core/models/table';
 import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
-import { Campaign } from '../../../core/models/campaign';
 import { allCampaigns } from '../../../core/data/campaign';
 
 @Component({
@@ -33,9 +33,11 @@ export class CampaignTableComponent implements OnInit {
   total = allCampaigns.length;
   skip = 0;
   take = PageSizeDefault;
-  campaigns: Campaign[] = [];
+  campaigns = [];
 
   constructor(
+    private route: ActivatedRoute,
+    private router: Router,
     private toastr: ToastrService
   ) {
   }
@@ -60,7 +62,10 @@ export class CampaignTableComponent implements OnInit {
 
   loadContracts(): void {
     this.campaigns = allCampaigns.slice(this.skip, this.skip + this.take);
+    this.campaigns = this.campaigns.map((item, index) => { return { ...item, id: index + 1, hover: false } });
+  }
+
+  goDetail(campaign: any): void {
+    this.router.navigate([campaign.id], { relativeTo: this.route })
   }
 }
-
-

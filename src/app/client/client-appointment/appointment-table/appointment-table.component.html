@@ -32,7 +32,12 @@
 
   <ng-template #detailColumn let-appointment="row">
     <div class="d-flex justify-content-center">
-      <button class="btn btn-large btn-thin btn-primary">View More</button>
+      <ng-container *ngIf="appointment.hover === true; else noHover;">
+        <button class="btn btn-medium btn-thin btn-success">View More</button>
+      </ng-container>
+      <ng-template #noHover>
+        <button class="btn btn-medium btn-thin btn-primary">View More</button>
+      </ng-template>
     </div>
   </ng-template>
 

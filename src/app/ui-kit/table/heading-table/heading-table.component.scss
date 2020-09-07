@@ -7,6 +7,30 @@
 }
 
 .table-row {
+  min-height: 50px;
+
+  &::ng-deep span {
+    color: $mine-shaft;
+  }
+
+  &::ng-deep p {
+    color: $dusty-gray;
+  }
+
+  &:hover {
+    &::ng-deep span {
+      color: $vista-blue;
+      &.danger {
+        color: $shilo;
+      }
+    }
+    &::ng-deep p {
+      color: $vista-blue;
+      &.danger {
+        color: $shilo;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-down(sm) {

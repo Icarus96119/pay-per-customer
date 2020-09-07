@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 
 import { TableColumn } from '../../core/models/table';
 import { PageSizeDefault } from '../../core/models/paginator';
+import { isBoolean } from 'util';
 
 @Component({
   selector: 'app-table',
@@ -43,6 +44,18 @@ export class TableComponent implements OnInit, AfterViewInit {
           queryParams
         });
       });
+    }
+  }
+
+  mouseEnter(row: any): void {
+    if (isBoolean(row.hover)) {
+      row.hover = true;
+    }
+  }
+
+  mouseLeave(row: any): void {
+    if (isBoolean(row.hover)) {
+      row.hover = false;
     }
   }
 

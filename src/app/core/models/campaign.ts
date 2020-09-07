@@ -13,6 +13,13 @@ export enum CampaignType {
   Lost = 'LOST',
 }
 
+export enum CampaignDetailType {
+  Logs = 'LOGS',
+  Billing = 'BILLING',
+  ViewLp = 'VIEW_LP',
+  EditClient = 'EDIT_CLIENT',
+}
+
 export interface Campaign extends Entity {
   user: User;
   paymentsTotal: number;

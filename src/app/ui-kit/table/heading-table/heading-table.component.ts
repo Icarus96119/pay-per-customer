@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TableColumn } from '../../../core/models/table';
+import { isBoolean } from "util";
 
 @Component({
   selector: 'app-heading-table',
@@ -19,6 +20,18 @@ export class HeadingTableComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mouseEnter(row: any): void {
+    if (isBoolean(row.hover)) {
+      row.hover = true;
+    }
+  }
+
+  mouseLeave(row: any): void {
+    if (isBoolean(row.hover)) {
+      row.hover = false;
+    }
   }
 
 }

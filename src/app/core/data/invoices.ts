@@ -1,7 +1,7 @@
 import { Invoice, InvoiceStatus, InvoiceType } from '../models/invoice';
 import { normalUser } from './consts';
 
-export const allInvoices: Invoice[] = [
+export const allInvoices = [
   {
     status: InvoiceStatus.Paid,
     amount: 1200.012,

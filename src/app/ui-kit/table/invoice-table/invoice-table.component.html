@@ -1,10 +1,10 @@
 <app-table [rows]="invoices"
-               [columns]="columns"
-               [pageSize]="take"
-               [length]="allInvoices.length"
-               [loading]="isLoading"
-               (page)="onPage($event)"
-               emptyDescription="No invoices to display.">
+           [columns]="columns"
+           [pageSize]="take"
+           [length]="allInvoices.length"
+           [loading]="isLoading"
+           (page)="onPage($event)"
+           emptyDescription="No invoices to display.">
 
   <ng-template #checkColumn let-invoice="row">
     <div class="d-flex justify-content-center align-items-center">
@@ -77,10 +77,18 @@
   <ng-template #payColumn let-invoice="row">
     <div class="d-flex justify-content-center">
       <div class="d-flex max-width-200 min-width-150 justify-content-center justify-content-md-start">
-        <button class="btn btn-medium btn-thin" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
-          PDF
-        </button>
-        <button class="btn btn-medium btn-thin btn-danger-active ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
+        <ng-container *ngIf="invoice.hover === true; else noHover;">
+          <button class="btn btn-medium btn-thin btn-danger">
+            PDF
+          </button>
+          <button *ngIf="invoice.status === InvoiceStatus.Due" class="btn btn-medium btn-thin btn-danger-active ml-auto">Pay</button>
+        </ng-container>
+        <ng-template #noHover>
+          <button class="btn btn-medium btn-thin btn-primary">
+            PDF
+          </button>
+          <button  *ngIf="invoice.status === InvoiceStatus.Due" class="btn btn-medium btn-thin btn-primary-active ml-auto">Pay</button>
+        </ng-template>
       </div>
     </div>
   </ng-template>

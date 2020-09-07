@@ -6,7 +6,6 @@ import { TableComponent } from '../../../ui-kit/table/table.component';
 import { TableColumn } from '../../../core/models/table';
 import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
-import { Sms } from '../../../core/models/notification';
 import { allSms } from '../../../core/data/notification';
 
 @Component({
@@ -31,7 +30,7 @@ export class SmsTableComponent implements OnInit {
   total = allSms.length;
   skip = 0;
   take = PageSizeDefault;
-  sms: Sms[] = [];
+  sms = [];
 
   constructor(
     private toastr: ToastrService
@@ -56,6 +55,7 @@ export class SmsTableComponent implements OnInit {
 
   loadContracts(): void {
     this.sms = allSms.slice(this.skip, this.skip + this.take);
+    this.sms = this.sms.map(item => { return { ...item, hover: false } });
   }
 }
 

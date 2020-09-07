@@ -6,7 +6,6 @@ import { TableComponent } from '../../../ui-kit/table/table.component';
 import { TableColumn } from '../../../core/models/table';
 import { PageSizeDefault } from '../../../core/models/paginator';
 import { ToastrService } from '../../../core/services/toastr.service';
-import { Email } from '../../../core/models/notification';
 import { allEmails} from '../../../core/data/notification';
 
 @Component({
@@ -31,7 +30,7 @@ export class EmailTableComponent implements OnInit {
   total = allEmails.length;
   skip = 0;
   take = PageSizeDefault;
-  emails: Email[] = [];
+  emails = [];
 
   constructor(
     private toastr: ToastrService
@@ -56,6 +55,7 @@ export class EmailTableComponent implements OnInit {
 
   loadContracts(): void {
     this.emails = allEmails.slice(this.skip, this.skip + this.take);
+    this.emails = this.emails.map(item => { return { ...item, hover: false } });
   }
 }
 

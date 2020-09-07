@@ -1,22 +1,11 @@
-<button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" [ngClass]="buttonClass" class="btn btn-danger btn-large py-0" *ngIf="danger; else noDanger;">
+<button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" class="btn btn-large py-0 {{ isHover === true ? ('btn-' + color + '-active') : ('btn-' + color) }} " [ngClass]="buttonClass">
   <div class="d-flex align-items-center">
-    <app-icon class="mr-5 width-20" [icon]="icon" color="{{ isHover ? 'white' : 'danger' }}"></app-icon>
-    <h6 class="font-14 text-overflow text-white m-0 text-white" *ngIf="isHover; else noHover;">{{ label }}</h6>
+    <app-icon class="mr-5 width-20" [icon]="icon" color="{{ isHover ? 'white' : color }}"></app-icon>
+    <h6 class="font-14 text-overflow text-white m-0 text-{{color}}" *ngIf="isHover === false; else noHover;">{{ label }}</h6>
     <ng-template #noHover>
-      <h6 class="font-14 text-overflow text-white m-0 text-danger" *ngIf="!isHover">{{ label }}</h6>
+      <h6 class="font-14 text-overflow text-white m-0 text-white">{{ label }}</h6>
     </ng-template>
   </div>
 </button>
-<ng-template #noDanger>
-  <button (click)="handleClick.emit()" (mouseover)="isHover = true" (mouseout)="isHover = false" class="btn btn-large py-0" [ngClass]="buttonClass">
-    <div class="d-flex align-items-center">
-      <app-icon class="mr-5 width-20" [icon]="icon" color="{{ isHover ? 'white' : color }}"></app-icon>
-      <h6 class="font-14 text-overflow text-white m-0 text-white" *ngIf="isHover; else noHover;">{{ label }}</h6>
-      <ng-template #noHover>
-        <h6 class="font-14 text-overflow text-white m-0 text-{{color}}" *ngIf="!isHover">{{ label }}</h6>
-      </ng-template>
-    </div>
-  </button>
-</ng-template>
 
 

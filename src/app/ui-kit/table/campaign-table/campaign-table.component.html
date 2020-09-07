@@ -38,7 +38,12 @@
 
   <ng-template #viewColumn let-campaign="row">
     <div class="d-flex justify-content-center align-items-center pr-0">
-      <button class="btn btn-large btn-thin btn-primary">View Campaign Details</button>
+      <ng-container *ngIf="campaign.hover === true; else noHover;">
+        <button class="btn btn-large btn-thin btn-success" (click)="goDetail(campaign)">View Campaign Details</button>
+      </ng-container>
+      <ng-template #noHover>
+        <button class="btn btn-large btn-thin btn-primary" (click)="goDetail(campaign)">View Campaign Details</button>
+      </ng-template>
     </div>
   </ng-template>
 

@@ -4,7 +4,7 @@
     background: transparent;
     color: $astronaut;
 
-    &-active, &:hover, &:focus, &:active {
+    &-active {
       background: $astronaut;
       color: white;
     }

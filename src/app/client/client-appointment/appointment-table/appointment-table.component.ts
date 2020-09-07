@@ -42,6 +42,15 @@ export class AppointmentTableComponent implements OnInit {
       { label: 'Member of Staff', templateRef: this.memberColumn, width: '150px' },
       { templateRef: this.detailColumn, width: '150px' },
     ];
+    this.loadContracts();
+  }
+
+  loadContracts(): void {
+    this.appointments = this.appointments.map(item => {
+      item.rows = item.rows.map(row => { return { ...row, hover: false } });
+      return item;
+    });
+    console.log(this.appointments);
   }
 }
 

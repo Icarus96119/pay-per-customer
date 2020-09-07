@@ -52,20 +52,12 @@
 
   <ng-template #viewColumn let-lead="row">
     <div class="d-flex justify-content-center">
-      <ng-container [ngSwitch]="lead.status">
-        <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <button class="btn btn-medium btn-thin btn-success">View Lead</button>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <button class="btn btn-medium btn-thin btn-danger">View Lead</button>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <button class="btn btn-medium btn-thin btn-warning">View Lead</button>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <button class="btn btn-medium btn-thin btn-info">View Lead</button>
-        </ng-container>
+      <ng-container *ngIf="lead.hover === true; else noHover;">
+        <button class="btn btn-medium btn-thin btn-success">View Lead</button>
       </ng-container>
+      <ng-template #noHover>
+        <button class="btn btn-medium btn-thin btn-primary">View Lead</button>
+      </ng-template>
     </div>
   </ng-template>
 </app-table>
