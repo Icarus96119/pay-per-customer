@@ -15,6 +15,7 @@ import { appointments } from '../../../core/data/appointment';
 export class AppointmentTableComponent implements OnInit {
 
   @Input() canAdd = false;
+  @Input() headingClass= '';
 
   @ViewChild(HeadingTableComponent) table: HeadingTableComponent;
   @ViewChild('dateColumn', {static: true}) dateColumn: TemplateRef<any>;

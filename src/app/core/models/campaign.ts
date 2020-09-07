@@ -20,6 +20,23 @@ export enum CampaignDetailType {
   EditClient = 'EDIT_CLIENT',
 }
 
+export enum CampaignDetailCardType {
+  TotalPayments = 'TOTAL_PAYMENTS',
+  MaxAdSpend = 'MAX._AD_SPEND',
+  NoOfTopUps = 'NO._OF_TOP_UPS',
+  LastTopUp = 'LAST_TOP_UP',
+  ContractSigned = 'CONTRACT_SIGNED',
+  InvoicesDue = 'INVOICES_DUE',
+  SalesPerson = 'SALES_PERSON',
+  AccountManager = 'ACCOUNT_MANAGER',
+}
+
+export interface CampaignDetailCard {
+  type: CampaignDetailCardType,
+  isCurrency: boolean,
+  value: string | number;
+}
+
 export interface Campaign extends Entity {
   user: User;
   paymentsTotal: number;

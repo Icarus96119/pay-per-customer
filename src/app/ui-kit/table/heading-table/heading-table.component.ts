@@ -12,6 +12,7 @@ export class HeadingTableComponent implements OnInit {
   @Input() isHeaderColumn = false;
   @Input() title: string;
   @Input() columns: TableColumn[] = [];
+  @Input() headingClass: string;
   @Input() sections: any[] = [];
   @Input() canAdd: boolean;
   @Input() loading: boolean;

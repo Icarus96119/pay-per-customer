@@ -1,0 +1,6 @@
+<div class="d-flex bg-white rounded shadow px-10 py-10 mb-10" (click)="navigateToLink()">
+  <div class="d-flex flex-column w-100">
+    <span class="font-weight-bold font-14 color-mine-shaft text-overflow mb-5">{{ info.type | optionLabel }}</span>
+    <span class="font-weight-bold font-20 text-overflow text-success">{{ info.isCurrency ? ( info.value | currency ) : info.value }}</span>
+  </div>
+</div>
