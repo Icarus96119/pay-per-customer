@@ -1,0 +1,28 @@
+<div class="d-flex flex-column bg-white rounded border-color-gallery border-1 shadow mb-10 cursor-pointer user-select-none">
+  <div class="row px-20 py-10 border-color-gallery border-bottom-1">
+    <div class="col-6">
+      <div class="d-flex flex-column">
+        <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Communication Type:</span>
+        <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.type }}</p>
+        <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Date Received:</span>
+        <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.receivedDate }}</p>
+        <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Last Communication Date:</span>
+        <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.lastCommunicationDate }}</p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="d-flex flex-column">
+        <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Subject:</span>
+        <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.subject | titlecase }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-end align-items-center py-5 mr-30">
+        <app-avatar size="25" class="mr-5"></app-avatar>
+        <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb">{{ info.sender.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>
