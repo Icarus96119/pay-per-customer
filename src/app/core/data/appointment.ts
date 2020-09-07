@@ -7,21 +7,21 @@ export const appointments: TableSection[] = [
     rows: [
       {
         date: '20/08/2020',
-        time: '14:20',
+        time: '10:00 - 12:00 PM',
         user: normalUser,
         contractor: normalUser,
         title: 'Meeting with Officials',
         detail: 'XYZ person'
       }, {
         date: '23/08/2020',
-        time: '09:00',
+        time: '10:00 - 12:00 PM',
         user: normalUser,
         contractor: normalUser,
         title: 'Meeting with Officials',
         detail: 'with Client'
       }, {
         date: '25/08/2020',
-        time: '16:00',
+        time: '10:00 - 12:00 PM',
         user: normalUser,
         contractor: normalUser,
         title: 'Plan Visit',
@@ -33,14 +33,14 @@ export const appointments: TableSection[] = [
     rows: [
       {
         date: '04/09/2020',
-        time: '12:00',
+        time: '10:00 - 12:00 PM',
         user: normalUser,
         contractor: normalUser,
         title: 'Meeting Clients',
         detail: 'ABC Person'
       }, {
         date: '06/09/2020',
-        time: '12:30',
+        time: '10:00 - 12:00 PM',
         user: normalUser,
         contractor: normalUser,
         title: 'Project Submission',

@@ -38,7 +38,7 @@ export class AppointmentTableComponent implements OnInit {
     this.columns = [
       { label: '', templateRef: this.titleColumn, width: '20%' },
       { label: 'Date', templateRef: this.dateColumn, width: '150px' },
-      { label: 'Time', templateRef: this.timeColumn, width: '70px' },
+      { label: 'Time', templateRef: this.timeColumn, width: '20%' },
       { label: 'Member of Staff', templateRef: this.memberColumn, width: '150px' },
       { templateRef: this.detailColumn, width: '150px' },
     ];
@@ -46,11 +46,11 @@ export class AppointmentTableComponent implements OnInit {
   }
 
   loadContracts(): void {
-    this.appointments = this.appointments.map(item => {
-      item.rows = item.rows.map(row => { return { ...row, hover: false } });
-      return item;
+    this.appointments = this.appointments.map(appointment => {
+      const rows = appointment.rows.map(row => { return { ...row, hover: false } });
+      appointment.rows = rows;
+      return appointment;
     });
-    console.log(this.appointments);
   }
 }
 

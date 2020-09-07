@@ -1,0 +1,15 @@
+<div class="row bg-white rounded shadow py-20 mx-0 mb-10">
+  <div class="col-5">
+    <div class="d-flex justify-content-end align-items-center">
+      <div class="icon">
+        <img class="height-80" src="assets/images/icons/{{ info.icon }}.png" alt="Icon">
+      </div>
+    </div>
+  </div>
+  <div class="col-7">
+    <div class="d-flex flex-column justify-content-center">
+      <h3 class="font-30 font-weight-bold mb-5" [ngClass]="info.valueColor">{{ info.isCurrency ? ( info.value | currency ) : info.value }}</h3>
+      <span class="font-14 font-weight-bold color-mine-shaft" >{{ info.text }}</span>
+    </div>
+  </div>
+</div>

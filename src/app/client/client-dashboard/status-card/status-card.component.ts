@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AdminHomeCard } from '../../../core/models/card';
+import { ClientDashboardCard } from '../../../core/models/card';
 
 @Component({
   selector: 'app-status-card',
@@ -10,7 +10,7 @@ import { AdminHomeCard } from '../../../core/models/card';
 })
 export class StatusCardComponent implements OnInit {
 
-  @Input() info: AdminHomeCard;
+  @Input() info: ClientDashboardCard;
 
   constructor(
     private router: Router
@@ -20,4 +20,3 @@ export class StatusCardComponent implements OnInit {
   }
 
 }
-

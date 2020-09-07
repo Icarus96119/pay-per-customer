@@ -39,6 +39,15 @@ export class TaskTableComponent implements OnInit {
       { label: 'Detail', templateRef: this.detailColumn, width: '70%' },
       { label: 'Created At', templateRef: this.createdAtColumn, width: '150px' },
     ];
+    this.loadContracts();
+  }
+
+  loadContracts(): void {
+    this.tasks = this.tasks.map(task => {
+      const rows = task.rows.map(row => { return { ...row, hover: false } });
+      task.rows = rows;
+      return task;
+    });
   }
 }
 

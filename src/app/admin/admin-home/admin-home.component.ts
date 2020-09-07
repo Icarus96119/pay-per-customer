@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { homeStatusCards } from '../../core/data/consts';
+import { adminHomeStatusCards } from '../../core/data/consts';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { homeStatusCards } from '../../core/data/consts';
 })
 export class AdminHomeComponent implements OnInit {
 
-  homeStatusCards = homeStatusCards;
+  homeStatusCards = adminHomeStatusCards;
 
   constructor() { }
 

@@ -1,7 +1,7 @@
-<div class="d-flex bg-white rounded shadow px-20 py-10 mb-10" (click)="navigateToLink()">
+<div class="d-flex bg-white rounded shadow px-20 py-10 mb-10">
   <div class="d-flex flex-column w-100">
-    <span class="font-weight-bold color-mine-shaft text-overflow mb-5">{{ text | optionLabel }}</span>
-    <span class="font-20 font-weight-bold text-overflow text-success mb-5">{{ value }}</span>
-    <span class="color-dusty-gray text-overflow">{{ type }}</span>
+    <span class="font-weight-bold color-mine-shaft text-overflow mb-5">{{ info.text | optionLabel }}</span>
+    <span class="font-20 font-weight-bold text-overflow text-success mb-5">{{ info.value }}</span>
+    <span class="color-dusty-gray text-overflow">{{ info.type }}</span>
   </div>
 </div>

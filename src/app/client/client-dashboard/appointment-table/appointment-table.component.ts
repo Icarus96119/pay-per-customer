@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
 
-import { HeadingTableComponent } from '../heading-table/heading-table.component';
+import { HeadingTableComponent } from '../../../ui-kit/table/heading-table/heading-table.component';
 
 import { TableColumn } from '../../../core/models/table';
 import { ToastrService } from '../../../core/services/toastr.service';
@@ -18,10 +18,11 @@ export class AppointmentTableComponent implements OnInit {
   @Input() headingClass= '';
 
   @ViewChild(HeadingTableComponent) table: HeadingTableComponent;
-  @ViewChild('dateColumn', {static: true}) dateColumn: TemplateRef<any>;
-  @ViewChild('titleColumn', {static: true}) titleColumn: TemplateRef<any>;
-  @ViewChild('timeColumn', {static: true}) timeColumn: TemplateRef<any>;
+  @ViewChild('avatarColumn', {static: true}) avatarColumn: TemplateRef<any>;
   @ViewChild('detailColumn', {static: true}) detailColumn: TemplateRef<any>;
+  @ViewChild('timeColumn', {static: true}) timeColumn: TemplateRef<any>;
+  @ViewChild('nameColumn', {static: true}) nameColumn: TemplateRef<any>;
+  @ViewChild('viewColumn', {static: true}) viewColumn: TemplateRef<any>;
 
   title = `Appointment`;
   appointments = appointments;
@@ -36,10 +37,11 @@ export class AppointmentTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.columns = [
-      { label: 'Date', templateRef: this.dateColumn, width: '150px' },
-      { label: 'Detail', templateRef: this.titleColumn, width: '50%' },
-      { label: 'Time', templateRef: this.timeColumn, width: '70px' },
-      { templateRef: this.detailColumn, width: '150px' },
+      { label: 'Date', templateRef: this.avatarColumn, width: '70px' },
+      { label: 'Detail', templateRef: this.detailColumn, width: '20%' },
+      { label: 'Time', templateRef: this.timeColumn, width: '20%' },
+      { label: 'Name', templateRef: this.nameColumn, width: '20%' },
+      { templateRef: this.viewColumn, width: '150px' },
     ];
     this.loadContracts();
   }

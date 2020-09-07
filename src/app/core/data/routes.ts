@@ -23,7 +23,12 @@ export const ROUTES = {
     lead: 'lead',
     liveChat: 'live-chat',
     notification: 'notification',
-  }
+  },
+  auth: {
+    login: 'login',
+    forgotPassword: 'forgot-password',
+    register: 'register'
+  },
 };
 
 export function toAbsolutePath(path: string | string[]): string {

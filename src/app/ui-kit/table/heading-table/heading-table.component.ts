@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { TableColumn } from '../../../core/models/table';
 import { isBoolean } from "util";
 
@@ -10,6 +11,7 @@ import { isBoolean } from "util";
 export class HeadingTableComponent implements OnInit {
 
   @Input() isHeaderColumn = false;
+  @Input() isTableHeaderColumn = true;
   @Input() title: string;
   @Input() columns: TableColumn[] = [];
   @Input() headingClass: string;

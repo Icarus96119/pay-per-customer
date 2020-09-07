@@ -1,3 +1,28 @@
 <section class="p-15 p-md-30">
-  <p>client-dashboard works!</p>
+  <div class="row align-items-center mb-10">
+    <div class="col-12">
+      <div class="d-flex">
+        <h3 class="color-dusty-gray font-30 font-weight-bold mr-10">Hello,</h3>
+        <h3 class="text-primary font-30 font-weight-bold">Danny</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row status-card-row mb-50">
+    <div class="status-card col-12 col-lg-4" *ngFor="let card of clientDashboardStatusCards">
+      <app-status-card [info]="card"></app-status-card>
+    </div>
+  </div>
+  <div class="row mb-50">
+    <div class="col-12">
+      <h3 class="text-primary font-25 font-weight-bold">Leads Report</h3>
+    </div>
+  </div>
+  <div class="row mb-50">
+    <div class="col-12 col-lg-8">
+      <app-appointment-table headingClass="font-weight-bold font-25 color-mine-shaft"></app-appointment-table>
+    </div>
+    <div class="col-12 col-lg-4">
+      <h3 class="color-mine-shaft font-25 font-weight-bold">Current Lead Statuses</h3>
+    </div>
+  </div>
 </section>
