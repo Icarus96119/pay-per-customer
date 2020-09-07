@@ -8,66 +8,31 @@
 
   <ng-template #indexColumn let-payment="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="payment.status">
-        <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.index }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
-          <span class="font-13 text-overflow font-weight-bold">{{ payment.index }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ payment.index }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentNumberColumn let-payment="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="payment.status">
-        <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.paymentNumber }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
-          <span class="font-13 text-overflow font-weight-bold">{{ payment.paymentNumber }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ payment.paymentNumber }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentMethodColumn let-payment="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="payment.status">
-        <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.paymentMethod }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
-          <span class="font-13 text-overflow font-weight-bold">{{ payment.paymentMethod }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ payment.paymentMethod | optionLabel }}</span>
     </div>
   </ng-template>
 
   <ng-template #dateTimeColumn let-payment="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="payment.status">
-        <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.dateAndTime }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
-          <span class="font-13 text-overflow font-weight-bold">{{ payment.dateAndTime }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ payment.dateAndTime }}</span>
     </div>
   </ng-template>
 
   <ng-template #amountColumn let-payment="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="payment.status">
-        <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ payment.amount }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="PaymentStatus.InComplete">
-          <span class="font-13 text-overflow font-weight-bold">{{ payment.amount }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ payment.amount }}</span>
     </div>
   </ng-template>
 
@@ -75,7 +40,7 @@
     <div class="d-flex flex-column">
       <ng-container [ngSwitch]="payment.status">
         <ng-container *ngSwitchCase="PaymentStatus.Completed">
-          <button class="btn btn-large btn-success-active">{{ payment.status | optionLabel }}</button>
+          <button class="btn btn-medium btn-thin btn-success-active">{{ payment.status | optionLabel }}</button>
         </ng-container>
       </ng-container>
     </div>

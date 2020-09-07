@@ -1,5 +1,9 @@
 @import "../../../../assets/theme";
 
+button {
+  height: 40px;
+}
+
 .btn-filter {
   background: transparent;
   border: solid 1px $dusty-gray;

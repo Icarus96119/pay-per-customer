@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// import { HighchartsChartComponent } from 'highcharts-angular';
 
 import { ChartModule } from '../../ui-kit/chart/chart.module';
 
@@ -9,7 +10,8 @@ import { AdminReportComponent } from './admin-report.component';
 
 @NgModule({
   declarations: [
-    AdminReportComponent
+    AdminReportComponent,
+    // HighchartsChartComponent
   ],
   imports: [
     CommonModule,

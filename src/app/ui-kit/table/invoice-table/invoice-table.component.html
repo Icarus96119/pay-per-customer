@@ -13,8 +13,8 @@
   </ng-template>
 
   <ng-template #statusColumn let-invoice="row">
-    <div class="d-flex justify-content-center">
-      <button class="btn btn-medium height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
+    <div class="d-flex">
+      <button class="btn btn-medium btn-thin" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-success' : 'btn-danger'">
         {{ invoice.status | optionLabel }}
       </button>
     </div>
@@ -22,9 +22,9 @@
 
   <ng-template #amountColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold mb-1" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">
         {{ invoice.amount | currency }}</span>
-      <p class="font-12 text-overflow m-0" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : 'color-dusty-gray'">
+      <p class="font-14 danger text-overflow m-0">
         {{ invoice.serialId }}</p>
     </div>
   </ng-template>
@@ -32,44 +32,44 @@
 
   <ng-template #customerInfoColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold mb-1" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">
         {{ invoice.user.businessName }}</span>
-      <p class="font-12 text-overflow m-0" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : 'color-dusty-gray'">
+      <p class="font-14 danger text-overflow m-0">
         {{ invoice.user.email }}</p>
     </div>
   </ng-template>
 
   <ng-template #issuedOnColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold">
         {{ invoice.issuedOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #paidOnColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold">
         {{ invoice.paidOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentRetryColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold">
         {{ invoice.paymentRetry }}</span>
     </div>
   </ng-template>
 
   <ng-template #voidedOnColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold">
         {{ invoice.voidedOn }}</span>
     </div>
   </ng-template>
 
   <ng-template #typeColumn let-invoice="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold" [ngClass]="invoice.status === InvoiceStatus.Due ? 'text-danger' : ''">
+      <span class="font-14 danger text-overflow font-weight-bold">
         {{ invoice.Type | optionLabel }}</span>
     </div>
   </ng-template>
@@ -77,10 +77,10 @@
   <ng-template #payColumn let-invoice="row">
     <div class="d-flex justify-content-center">
       <div class="d-flex max-width-200 min-width-150 justify-content-center justify-content-md-start">
-        <button class="btn btn-medium height-40" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
+        <button class="btn btn-medium btn-thin" [ngClass]="invoice.status === InvoiceStatus.Paid ? 'btn-primary' : 'btn-danger'">
           PDF
         </button>
-        <button class="btn btn-medium btn-danger-active height-40 ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
+        <button class="btn btn-medium btn-thin btn-danger-active ml-auto" *ngIf="invoice.status === InvoiceStatus.Due">Pay</button>
       </div>
     </div>
   </ng-template>

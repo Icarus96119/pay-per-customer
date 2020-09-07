@@ -1,14 +1,18 @@
-<div class="sidebar bg-white shadow" [class.collapsed]="isCollapsed" (mouseenter)="isCollapsed = false" (mouseleave)="isCollapsed = true">
+<div class="sidebar bg-white shadow" [class.collapsed]="isCollapsed">
   <a class="position-absolute z-index-1 right-n10 cursor-pointer btn-collapse d-none d-md-block" (click)="toggle()"><img src="assets/images/icons/collapse.svg" alt="Collapse"></a>
   <div class="d-flex flex-column justify-content-between h-100">
     <ul class="list-unstyled overflow-hidden">
-      <li *ngFor="let item of menus" class="d-flex align-items-center px-10 py-5 cursor-pointer user-select-none" [routerLink]="[item.route]" routerLinkActive="active">
+      <li *ngFor="let item of menus" class="d-flex align-items-center height-55 px-10 py-5 cursor-pointer user-select-none" [routerLink]="[item.route]" routerLinkActive="active">
         <a class="d-flex align-items-center" (click)="isCollapsed = true">
           <div class="inactive">
-            <app-icon class="mr-5" [icon]="item.icon" color="mine-shaft"></app-icon>
+            <div class="d-flex align-items-center">
+              <app-icon class="mr-5" [icon]="item.icon" color="mine-shaft"></app-icon>
+            </div>
           </div>
           <div class="active">
-            <app-icon class="mr-5" [icon]="item.icon" color="white"></app-icon>
+            <div class="d-flex align-items-center">
+              <app-icon class="mr-5" [icon]="item.icon" color="white"></app-icon>
+            </div>
           </div>
           <span class="font-15 color-mine-shaft font-weight-medium ml-10">{{ item.label }}</span>
         </a>

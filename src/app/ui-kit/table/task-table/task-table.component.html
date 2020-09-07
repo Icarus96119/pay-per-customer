@@ -13,14 +13,14 @@
 
   <ng-template #detailColumn let-task="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold mb-1">{{ task.title }}</span>
-      <p class="font-12 text-overflow m-0 color-dusty-gray">{{ task.user.businessName }}</p>
+      <span class="font-14 color-charade text-overflow font-weight-bold mb-1">{{ task.title }}</span>
+      <p class="font-14 color-dusty-gray text-overflow m-0">{{ task.user.businessName }}</p>
     </div>
   </ng-template>
 
   <ng-template #createdAtColumn let-task="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold"
+      <span class="font-14 color-charade text-overflow font-weight-bold"
             [ngClass]="task.isCarriedOut ? 'text-success' : 'text-danger'">{{ task.createdAt }}</span>
     </div>
   </ng-template>

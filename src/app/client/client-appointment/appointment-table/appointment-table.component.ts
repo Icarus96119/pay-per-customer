@@ -36,10 +36,10 @@ export class AppointmentTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.columns = [
-      { label: '', templateRef: this.titleColumn, width: '30%' },
+      { label: '', templateRef: this.titleColumn, width: '20%' },
       { label: 'Date', templateRef: this.dateColumn, width: '150px' },
       { label: 'Time', templateRef: this.timeColumn, width: '70px' },
-      { label: 'Member of Staff', templateRef: this.memberColumn, width: '70px' },
+      { label: 'Member of Staff', templateRef: this.memberColumn, width: '150px' },
       { templateRef: this.detailColumn, width: '150px' },
     ];
   }

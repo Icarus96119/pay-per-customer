@@ -7,20 +7,20 @@
            emptyDescription="No invoices to display.">
 
   <ng-template #statusColumn let-campaignSubscription="row">
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex align-items-center">
       <ng-container [ngSwitch]="campaignSubscription.status">
         <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <button class="btn btn-large btn-warning-active height-40">
+          <button class="btn btn-large btn-thin btn-warning-active">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <button class="btn btn-large btn-danger-active height-40">
+          <button class="btn btn-large btn-thin btn-danger-active">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
         <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <button class="btn btn-large btn-success-active height-40">
+          <button class="btn btn-large btn-thin btn-success-active">
             {{ campaignSubscription.status }}
           </button>
         </ng-container>
@@ -30,100 +30,38 @@
 
   <ng-template #businessNameColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.user.businessName }}</span>
-          <p class="font-12 text-overflow text-warning m-0">{{ campaignSubscription.user.email }}</p>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.user.businessName }}</span>
-          <p class="font-12 text-overflow text-danger m-0">{{ campaignSubscription.user.email }}</p>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.user.businessName }}</span>
-          <p class="font-12 text-overflow text-success m-0">{{ campaignSubscription.user.email }}</p>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.user.businessName }}</span>
+      <p class="font-14 danger text-overflow m-0">{{ campaignSubscription.user.email }}</p>
     </div>
   </ng-template>
 
   <ng-template #paymentMethodColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.paymentMethod | optionLabel }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.paymentMethod | optionLabel }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.paymentMethod | optionLabel }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.paymentMethod | optionLabel }}</span>
     </div>
   </ng-template>
 
   <ng-template #nextRenewalColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.nextRenewal }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.nextRenewal }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.nextRenewal }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.nextRenewal }}</span>
     </div>
   </ng-template>
 
   <ng-template #renewalAmountColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
     </div>
   </ng-template>
 
   <ng-template #numberOfRenewalsColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <span class="font-13 text-overflow font-weight-bold text-warning mb-1">{{ campaignSubscription.numberOfRenewals }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <span class="font-13 text-overflow font-weight-bold text-danger mb-1">{{ campaignSubscription.numberOfRenewals }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <span class="font-13 text-overflow font-weight-bold text-success mb-1">{{ campaignSubscription.numberOfRenewals }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.numberOfRenewals }}</span>
     </div>
   </ng-template>
 
   <ng-template #editColumn let-campaignSubscription="row">
     <div class="d-flex justify-content-center align-items-center pr-0">
-      <ng-container [ngSwitch]="campaignSubscription.status">
-        <ng-container *ngSwitchCase="SubscriptionStatus.Paused">
-          <app-icon-button icon="edit" color="warning" buttonClass="btn-edit-warning" label="Edit Subscription"></app-icon-button>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Cancelled">
-          <app-icon-button icon="edit" color="danger" buttonClass="btn-edit-danger" label="Edit Subscription"></app-icon-button>
-        </ng-container>
-        <ng-container *ngSwitchCase="SubscriptionStatus.Active">
-          <app-icon-button icon="edit" color="success" buttonClass="btn-edit-success" label="Edit Subscription"></app-icon-button>
-        </ng-container>
-      </ng-container>
+      <app-icon-button icon="edit" color="primary" buttonClass="btn-primary btn-thin" label="Edit Subscription"></app-icon-button>
     </div>
   </ng-template>
 

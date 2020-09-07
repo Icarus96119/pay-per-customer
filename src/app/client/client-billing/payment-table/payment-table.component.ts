@@ -50,7 +50,7 @@ export class PaymentTableComponent implements OnInit {
       { label: 'Payment Method', templateRef: this.paymentMethodColumn, width: '20%' },
       { label: 'Date & Time', templateRef: this.dateTimeColumn, width: '20%'},
       { label: 'Amount', templateRef: this.amountColumn, width: '100px' },
-      { label: 'Status', templateRef: this.statusColumn, width: '150px' },
+      { label: 'Status', templateRef: this.statusColumn, width: '100px' },
     ];
     this.loadContracts();
   }

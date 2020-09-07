@@ -47,8 +47,8 @@ export class LeadTableComponent implements OnInit {
       { label: 'Contact', templateRef: this.contactColumn, width: '15%' },
       { label: 'Email', templateRef: this.emailColumn, width: '20%' },
       { label: 'Code', templateRef: this.codeColumn, width: '10%'},
-      { label: 'Status', templateRef: this.statusColumn, width: '150px' },
-      { templateRef: this.viewColumn, width: '150px' },
+      { label: 'Status', templateRef: this.statusColumn, width: '100px' },
+      { templateRef: this.viewColumn, width: '100px' },
     ];
     this.loadContracts();
   }

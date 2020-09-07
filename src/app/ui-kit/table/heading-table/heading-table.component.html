@@ -1,20 +1,20 @@
-<div class="table-header d-flex justify-content-between align-items-center bg-color-gallery font-12 px-15" *ngIf="isHeaderColumn; else noHeader">
+<div class="table-header d-flex justify-content-between align-items-center bg-color-gallery font-12 mb-10 px-15" *ngIf="isHeaderColumn; else noHeader">
   <div *ngFor="let column of columns; let i = index;" [style.width]="column.width" [class.flex-grow-1]="!column.width">
-    <p class="text-overflow m-0 d-none d-md-block pr-20 pr-lg-0" *ngIf="i < columns.length - 1; else last">{{ column.label }}</p>
+    <p class="text-overflow color-mine-shaft m-0 d-none d-md-block pr-20 pr-lg-0" *ngIf="i < columns.length - 1; else last">{{ column.label }}</p>
     <ng-template #last>
-      <p class="text-overflow m-0 d-none d-md-block pr-0">{{ column.label }}</p>
+      <p class="text-overflow color-mine-shaft m-0 d-none d-md-block pr-0">{{ column.label }}</p>
     </ng-template>
   </div>
 </div>
 <ng-template #noHeader>
-  <div class="d-flex justify-content-between align-items-center" *ngIf="!isHeaderColumn">
+  <div class="d-flex justify-content-between align-items-center mb-20" *ngIf="!isHeaderColumn">
     <h3 class="font-20 font-weight-medium m-0">{{ title }}s</h3>
     <div class="d-flex" *ngIf="canAdd; else noAdd">
       <button class="btn btn-large btn-primary-active">Add {{title}}</button>
     </div>
     <ng-template #noAdd>
-      <div class="d-flex">
-        <span>See All</span>
+      <div class="d-flex align-items-center">
+        <span class="mr-5">See All</span><app-icon icon="eye"></app-icon>
       </div>
     </ng-template>
   </div>
@@ -23,7 +23,7 @@
 <div class="position-relative">
   <div *ngFor="let section of sections">
     <div class="d-flex px-15 py-5">
-      <span class="color-dusty-gray">{{ section.header }}</span>
+      <span class="color-silver">{{ section.header }}</span>
     </div>
     <div *ngFor="let row of section.rows">
       <div class="table-row d-flex flex-column flex-md-row justify-content-between align-items-center bg-white my-10 text-center text-md-left px-15 border-radius-5 cursor-pointer">

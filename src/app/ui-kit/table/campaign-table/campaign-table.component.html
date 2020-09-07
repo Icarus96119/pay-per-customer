@@ -8,37 +8,37 @@
 
   <ng-template #businessNameColumn let-campaign="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold">{{ campaign.user.businessName }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ campaign.user.businessName }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentsTotalColumn let-campaign="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold">{{ campaign.paymentsTotal | currency }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ campaign.paymentsTotal | currency }}</span>
     </div>
   </ng-template>
 
   <ng-template #maxAdSpendColumn let-campaign="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold">{{ campaign.maxAdSpend | currency }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ campaign.maxAdSpend | currency }}</span>
     </div>
   </ng-template>
 
   <ng-template #numberOfTopUpsColumn let-campaign="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold">{{ campaign.numberOfTopUps }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ campaign.numberOfTopUps }}</span>
     </div>
   </ng-template>
 
   <ng-template #daysSinceLastTopUpColumn let-campaign="row">
     <div class="d-flex flex-column">
-      <span class="font-13 text-overflow font-weight-bold">{{ campaign.daysSinceLastTopUp | day }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ campaign.daysSinceLastTopUp | day }}</span>
     </div>
   </ng-template>
 
   <ng-template #viewColumn let-campaign="row">
     <div class="d-flex justify-content-center align-items-center pr-0">
-      <button class="btn btn-large btn-primary height-40">View Campaign Details</button>
+      <button class="btn btn-large btn-thin btn-primary">View Campaign Details</button>
     </div>
   </ng-template>
 

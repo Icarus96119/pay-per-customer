@@ -8,78 +8,26 @@
 
   <ng-template #nameColumn let-lead="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="lead.status">
-        <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.name }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.name }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.name }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.name }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ lead.user.name }}</span>
     </div>
   </ng-template>
 
   <ng-template #contactColumn let-lead="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="lead.status">
-        <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.phone }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.phone }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.phone }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.phone }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ lead.user.phone }}</span>
     </div>
   </ng-template>
 
 
   <ng-template #emailColumn let-lead="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="lead.status">
-        <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.user.email }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.user.email }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.user.email }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.user.email }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ lead.user.email }}</span>
     </div>
   </ng-template>
 
   <ng-template #codeColumn let-lead="row">
     <div class="d-flex flex-column">
-      <ng-container [ngSwitch]="lead.status">
-        <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <span class="font-13 text-overflow font-weight-bold text-success">{{ lead.code }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <span class="font-13 text-overflow font-weight-bold text-danger">{{ lead.code }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <span class="font-13 text-overflow font-weight-bold text-warning">{{ lead.code }}</span>
-        </ng-container>
-        <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <span class="font-13 text-overflow font-weight-bold text-info">{{ lead.code }}</span>
-        </ng-container>
-      </ng-container>
+      <span class="font-14 text-overflow font-weight-medium">{{ lead.code }}</span>
     </div>
   </ng-template>
 
@@ -87,16 +35,16 @@
     <div class="d-flex flex-column">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <button class="btn btn-large btn-success-active">{{ lead.status | optionLabel }}</button>
+          <button class="btn btn-medium btn-thin btn-success-active">{{ lead.status | optionLabel }}</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <button class="btn btn-large btn-danger-active">{{ lead.status | optionLabel }}</button>
+          <button class="btn btn-medium btn-thin btn-danger-active">{{ lead.status | optionLabel }}</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <button class="btn btn-large btn-warning-active">{{ lead.status | optionLabel }}</button>
+          <button class="btn btn-medium btn-thin btn-warning-active">{{ lead.status | optionLabel }}</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <button class="btn btn-large btn-info-active">{{ lead.status | optionLabel }}</button>
+          <button class="btn btn-medium btn-thin btn-info-active">{{ lead.status | optionLabel }}</button>
         </ng-container>
       </ng-container>
     </div>
@@ -106,16 +54,16 @@
     <div class="d-flex justify-content-center">
       <ng-container [ngSwitch]="lead.status">
         <ng-container *ngSwitchCase="LeadStatus.Sold">
-          <button class="btn btn-large btn-success">View Lead</button>
+          <button class="btn btn-medium btn-thin btn-success">View Lead</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.DidNotBuy">
-          <button class="btn btn-large btn-danger">View Lead</button>
+          <button class="btn btn-medium btn-thin btn-danger">View Lead</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.Spam">
-          <button class="btn btn-large btn-warning">View Lead</button>
+          <button class="btn btn-medium btn-thin btn-warning">View Lead</button>
         </ng-container>
         <ng-container *ngSwitchCase="LeadStatus.Pending">
-          <button class="btn btn-large btn-info">View Lead</button>
+          <button class="btn btn-medium btn-thin btn-info">View Lead</button>
         </ng-container>
       </ng-container>
     </div>
