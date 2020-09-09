@@ -1,0 +1,14 @@
+@import "../../../assets/theme";
+
+.btn-business {
+  background: white;
+  color: $dusty-gray;
+  border-radius: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  &.active, &:hover {
+    background: $astronaut;
+    color: white;
+  }
+}

@@ -1,0 +1,13 @@
+:host {
+  height: 100vh;
+  section {
+    height: 100vh;
+    .row {
+      height: 100vh;
+    }
+  }
+}
+
+.gradient {
+  background: linear-gradient(218.33deg, #0BB1E3 1.66%, #10317B 96.1%);
+}

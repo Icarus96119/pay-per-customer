@@ -1,1 +1,35 @@
-<p>login works!</p>
+<section>
+  <div class="row m-0">
+    <div class="col-12 col-lg-5 p-0">
+      <div class="d-flex flex-column position-relative h-100 p-50">
+        <div class="logo mb-40">
+          <img class="height-60" src="assets/images/logo.svg" alt="Logo">
+        </div>
+        <h3 class="font-30 font-weight-bold">Log in to your account</h3>
+        <form class="mt-70 w-100" autocomplete="off" [formGroup]="loginForm" (ngSubmit)="login()">
+          <app-icon-input icon="at" label="Email Address" color="alto" placeholder="Enter Email Address" formControlName="email"></app-icon-input>
+          <app-icon-input icon="lock" label="Password" color="alto" placeholder="Enter Password" formControlName="password"></app-icon-input>
+          <div class="d-flex justify-content-end">
+            <a class="font-14 font-weight-bold color-astronaut">Forgot password?</a>
+          </div>
+          <div class="d-flex mt-20">
+            <button class="btn btn-primary-active w-100">Login</button>
+          </div>
+          <div class="d-block d-lg-flex mt-20">
+            <p class="font-14 font-weight-bold colo-mine-shaft-">Need to create a PayPerCustomer account?</p>
+            <a class="font-14 font-weight-bold color-astronaut ml-auto">Create an account</a>
+          </div>
+        </form>
+        <span class="d-block d-lg-none mt-50 font-13 font-weight-normal">@ 2020 All Rights Reserved, PayPerCustomer Limited.</span>
+        <span class="d-none d-lg-block position-absolute bottom-50 mt-lg-0 font-13 font-weight-normal">@ 2020 All Rights Reserved, PayPerCustomer Limited.</span>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 d-none d-lg-block p-0 gradient">
+      <div class="d-flex h-100 justify-content-center align-items-center">
+        <div class="testimonial">
+          <img src="assets/images/testimonial.svg" alt="Testimonial">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

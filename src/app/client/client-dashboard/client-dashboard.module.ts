@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { IconModule } from '../../ui-kit/icon/icon.module';
 import { AppointmentTableModule } from './appointment-table/appointment-table.module';
+import { ChartModule } from '../../ui-kit/chart/chart.module';
 
 import { ClientDashboardRoutingModule } from './client-dashboard-routing.module';
 
@@ -18,6 +19,7 @@ import { StatusCardComponent } from './status-card/status-card.component';
     CommonModule,
     IconModule,
     AppointmentTableModule,
+    ChartModule,
     ClientDashboardRoutingModule
   ]
 })

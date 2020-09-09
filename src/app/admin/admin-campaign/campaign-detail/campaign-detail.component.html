@@ -9,9 +9,9 @@
       </div>
     </div>
   </div>
-  <div class="row  mb-30">
+  <div class="row mb-20">
     <div class="col-12 col-lg-3">
-      <h3 class="text-primary font-25 font-weight-bold mr-10">Campaign Report</h3>
+      <h3 class="text-primary font-25 font-weight-bold mb-0 mr-10">Campaign Report</h3>
     </div>
     <div class="col-12 col-lg-9">
       <div class="d-flex justify-content-end mt-10 mt-lg-0">
@@ -20,6 +20,11 @@
         </button>
         <button class="btn font-13 btn-primary-active btn-large px-30 font-weight-medium">Pending Campaign</button>
       </div>
+    </div>
+  </div>
+  <div class="row mb-30">
+    <div class="col-12">
+      <app-chart [chartOptions]="campaignReportChartOptions"></app-chart>
     </div>
   </div>
   <div class="row mb-30">

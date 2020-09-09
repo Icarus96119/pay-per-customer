@@ -14,7 +14,10 @@
   </div>
   <div class="row mb-50">
     <div class="col-12">
-      <h3 class="text-primary font-25 font-weight-bold">Leads Report</h3>
+      <div class="d-flex flex-column">
+        <h3 class="text-primary font-25 font-weight-bold mb-20">Leads Report</h3>
+        <app-chart [chartOptions]="leadReportChartOptions"></app-chart>
+      </div>
     </div>
   </div>
   <div class="row mb-50">
@@ -22,7 +25,10 @@
       <app-appointment-table headingClass="font-weight-bold font-25 color-mine-shaft"></app-appointment-table>
     </div>
     <div class="col-12 col-lg-4">
-      <h3 class="color-mine-shaft font-25 font-weight-bold">Current Lead Statuses</h3>
+      <div class="d-flex flex-column mt-20 mt-lg-0">
+        <h3 class="color-mine-shaft font-25 font-weight-bold mb-20">Current Lead Statuses</h3>
+        <app-chart [chartOptions]="leadStatusChartOptions"></app-chart>
+      </div>
     </div>
   </div>
 </section>

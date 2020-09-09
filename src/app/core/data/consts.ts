@@ -51,19 +51,19 @@ export const clientDashboardStatusCards: ClientDashboardCard[] = [
     icon: 'people',
     value: 68,
     isCurrency: false,
-    valueColor: 'text-primary',
+    valueColor: 'color-blue-ribbon',
     text: 'Leads so far'
   }, {
     icon: 'calendar',
     value: 76,
     isCurrency: false,
-    valueColor: 'text-success',
+    valueColor: 'color-shamrock',
     text: 'Leads so far'
   }, {
     icon: 'bill',
     value: 757.50,
     isCurrency: true,
-    valueColor: 'text-danger',
+    valueColor: 'color-valencia',
     text: 'Leads so far'
   }
 ]

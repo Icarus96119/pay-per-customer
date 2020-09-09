@@ -9,12 +9,14 @@ import { IconModule } from '../icon/icon.module';
 import { SearchInputComponent } from './search-input/search-input.component';
 import { SelectComponent } from './select/select.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { IconInputComponent } from './icon-input/icon-input.component';
 
 @NgModule({
   declarations: [
     SearchInputComponent,
     SelectComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    IconInputComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
   exports: [
     SearchInputComponent,
     SelectComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    IconInputComponent
   ]
 })
 export class InputModule { }

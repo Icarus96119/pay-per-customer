@@ -8,6 +8,7 @@ import { CampaignTableModule } from '../../ui-kit/table/campaign-table/campaign-
 import { TaskTableModule } from '../../ui-kit/table/task-table/task-table.module';
 import { AppointmentTableModule } from '../../ui-kit/table/appointment-table/appointment-table.module';
 import { CardModule } from '../../ui-kit/card/card.module';
+import { ChartModule } from '../../ui-kit/chart/chart.module';
 
 import { AdminCampaignRoutingModule } from './admin-campaign-routing.module';
 
@@ -31,7 +32,8 @@ import { CampaignDetailCardComponent } from './campaign-detail-card/campaign-det
     CampaignTableModule,
     TaskTableModule,
     AppointmentTableModule,
-    CardModule
+    CardModule,
+    ChartModule
   ]
 })
 export class AdminCampaignModule { }
