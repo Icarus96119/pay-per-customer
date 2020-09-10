@@ -1,0 +1,9 @@
+<div class="form-group border-bottom-1 border-color-{{color}}" [class.label-input-group]="label">
+  <div class="d-flex mb-5">
+    <span class="color-dove-gray font-14" *ngIf="label">{{ label }}</span><span *ngIf="hasPoint" class="color-red font-weight-bold font-14 ml-5">*</span>
+  </div>
+  <div class="d-flex align-items-center">
+    <app-icon class="ml-5 mr-10 width-20" *ngIf="icon" [icon]="icon" [color]="color"></app-icon>
+    <input class="form-control px-0 border-0" [min]="min" [type]="type" [(ngModel)]="value" [placeholder]="placeholder" (ngModelChange)="change($event)" [readonly]="readonly">
+  </div>
+</div>

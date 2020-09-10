@@ -58,12 +58,12 @@ export const clientDashboardStatusCards: ClientDashboardCard[] = [
     value: 76,
     isCurrency: false,
     valueColor: 'color-shamrock',
-    text: 'Leads so far'
+    text: 'Appointments Booked'
   }, {
     icon: 'bill',
     value: 757.50,
     isCurrency: true,
     valueColor: 'color-valencia',
-    text: 'Leads so far'
+    text: 'Amount Owed'
   }
 ]

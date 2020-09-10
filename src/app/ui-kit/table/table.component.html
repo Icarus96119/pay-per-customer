@@ -1,6 +1,6 @@
 <div class="table-header d-flex justify-content-between align-items-center bg-color-gallery font-12 px-15">
   <div *ngFor="let column of columns; let last = last" [style.width]="column.width" [class.flex-grow-1]="!column.width">
-    <p class="color-mine-shaft font-14 text-overflow m-0 d-none d-md-block" [class.pr-20]="!last" [class.pr-lg-0]="!last">{{ column.label }}</p>
+    <p class="color-mine-shaft font-14 font-weight-bold text-overflow m-0 d-none d-md-block" [class.pr-20]="!last" [class.pr-lg-0]="!last">{{ column.label }}</p>
   </div>
 </div>
 

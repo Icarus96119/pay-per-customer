@@ -23,7 +23,7 @@
   <ng-template #amountColumn let-invoice="row">
     <div class="d-flex flex-column">
       <span class="font-14 danger text-overflow font-weight-bold mb-1">
-        {{ invoice.amount | currency }}</span>
+        {{ invoice.amount | currency: 'GBP' }}</span>
       <p class="font-14 danger text-overflow m-0">
         {{ invoice.serialId }}</p>
     </div>

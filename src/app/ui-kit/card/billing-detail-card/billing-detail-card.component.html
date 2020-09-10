@@ -1,10 +1,10 @@
-<div class="bg-white rounded shadow px-20 py-10 mb-10">
+<div class="bg-white rounded shadow px-20 py-10 mb-10 cursor-pointer user-select-none">
   <div class="row mb-10">
     <div class="col-6">
       <div class="d-flex flex-column">
         <span class="font-weight-bold text-primary text-overflow mb-10">Billing Details</span>
         <div class="d-flex mb-5">
-          <img class="height-40" src="assets/images/icons/payment-card/{{ card.cardName }}.png" [alt]="card">
+          <img class="height-60" src="assets/images/icons/payment-card/{{ card.cardName }}.png" [alt]="card">
         </div>
         <span class="font-weight-bold text-primary text-overflow">{{ card.cardNumber }}</span>
         <span class="font-weight-bold text-primary text-overflow">{{ card.yy }}</span>
@@ -22,7 +22,7 @@
   <div class="row">
     <div class="col-12">
       <div class="d-flex justify-content-end">
-        <a class="text-primary cursor-pointer user-select-none">+ Add Another Card</a>
+        <a class="text-primary">+ Add Another Card</a>
       </div>
     </div>
   </div>

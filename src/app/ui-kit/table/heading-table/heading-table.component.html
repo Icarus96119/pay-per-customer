@@ -1,8 +1,8 @@
 <div class="table-header d-flex justify-content-between align-items-center bg-color-gallery font-12 mb-10 px-15" *ngIf="isHeaderColumn; else noHeader">
   <div *ngFor="let column of columns; let i = index;" [style.width]="column.width" [class.flex-grow-1]="!column.width">
-    <p class="text-overflow color-mine-shaft m-0 d-none d-md-block pr-20 pr-lg-0" *ngIf="i < columns.length - 1; else last">{{ column.label }}</p>
+    <p class="text-overflow font-weight-bold color-mine-shaft m-0 d-none d-md-block pr-20 pr-lg-0" *ngIf="i < columns.length - 1; else last">{{ column.label }}</p>
     <ng-template #last>
-      <p class="text-overflow color-mine-shaft m-0 d-none d-md-block pr-0">{{ column.label }}</p>
+      <p class="text-overflow font-weight-bold color-mine-shaft m-0 d-none d-md-block pr-0">{{ column.label }}</p>
     </ng-template>
   </div>
 </div>

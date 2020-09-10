@@ -7,13 +7,14 @@
         <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Date Received:</span>
         <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.receivedDate }}</p>
         <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Last Communication Date:</span>
-        <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.lastCommunicationDate }}</p>
+        <p class="font-weight-medium font-14 color-mine-shaft text-overflow m-0">{{ info.lastCommunicationDate }}</p>
       </div>
     </div>
     <div class="col-6">
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column position-relative h-100">
         <span class="font-weight-medium font-14 color-dusty-gray text-overflow mb-5">Subject:</span>
         <p class="font-weight-medium font-14 color-mine-shaft text-overflow mb-10">{{ info.subject | titlecase }}</p>
+        <a class="position-absolute bottom-0 right-0 text-primary">View Conversation</a>
       </div>
     </div>
   </div>

@@ -17,81 +17,11 @@ export const allSms: Sms[] = [
     receiver: normalUser,
     createdAt: 'July 16, 2020',
     content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
   }
 ];
 
 export const allEmails: Email[] = [
   {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
-    sender: normalUser,
-    receiver: normalUser,
-    createdAt: 'July 16, 2020',
-    content: 'Hello'
-  }, {
     sender: normalUser,
     receiver: normalUser,
     createdAt: 'July 16, 2020',

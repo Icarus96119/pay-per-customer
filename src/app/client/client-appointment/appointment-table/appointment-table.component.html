@@ -14,19 +14,19 @@
 
   <ng-template #dateColumn let-appointment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 color-dusty-gray text-overflow">{{ appointment.date }}</span>
+      <p class="font-14 color-dusty-gray text-overflow font-weight-bold m-0">{{ appointment.date }}</p>
     </div>
   </ng-template>
 
   <ng-template #timeColumn let-appointment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 color-dusty-gray text-overflow">{{ appointment.time }}</span>
+      <p class="font-14 color-dusty-gray text-overflow font-weight-bold m-0">{{ appointment.time }}</p>
     </div>
   </ng-template>
 
   <ng-template #memberColumn let-appointment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 color-dusty-gray text-overflow">{{ appointment.contractor.businessName }}</span>
+      <p class="font-14 color-dusty-gray text-overflow font-weight-bold m-0">{{ appointment.contractor.businessName }}</p>
     </div>
   </ng-template>
 

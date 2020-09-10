@@ -8,31 +8,31 @@
 
   <ng-template #indexColumn let-payment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 text-overflow font-weight-medium">{{ payment.index }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ payment.index }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentNumberColumn let-payment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 text-overflow font-weight-medium">{{ payment.paymentNumber }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ payment.paymentNumber }}</span>
     </div>
   </ng-template>
 
   <ng-template #paymentMethodColumn let-payment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 text-overflow font-weight-medium">{{ payment.paymentMethod | optionLabel }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ payment.paymentMethod | optionLabel }}</span>
     </div>
   </ng-template>
 
   <ng-template #dateTimeColumn let-payment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 text-overflow font-weight-medium">{{ payment.dateAndTime }}</span>
+      <span class="font-14 text-overflow font-weight-bold">{{ payment.dateAndTime }}</span>
     </div>
   </ng-template>
 
   <ng-template #amountColumn let-payment="row">
     <div class="d-flex flex-column">
-      <span class="font-14 text-overflow font-weight-medium">{{ payment.amount }}</span>
+      <span class="font-14 text-overflow font-weight-bold">+ {{ payment.amount | currency: 'GBP' }}</span>
     </div>
   </ng-template>
 

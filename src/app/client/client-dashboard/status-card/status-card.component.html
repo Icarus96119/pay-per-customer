@@ -9,7 +9,7 @@
   <div class="col-7">
     <div class="d-flex h-100 align-items-end">
       <div class="d-flex flex-column">
-        <h3 class="font-30 font-weight-bold mb-5" [ngClass]="info.valueColor">{{ info.isCurrency ? ( info.value | currency ) : info.value }}</h3>
+        <h3 class="font-40 font-weight-bold mb-5" [ngClass]="info.valueColor">{{ info.isCurrency ? ( info.value | currency: 'GBP' ) : info.value }}</h3>
         <span class="font-14 font-weight-bold color-mine-shaft" >{{ info.text }}</span>
       </div>
     </div>

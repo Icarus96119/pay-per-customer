@@ -22,7 +22,7 @@ export class AdminHomeComponent implements OnInit {
       text: ''
     },
     xAxis:{
-      categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'], title: {
+      categories: ['Client 05', 'Client 04', 'Client 03', 'Client 02', 'Client 01'], title: {
         text: null
       }
     },
@@ -52,15 +52,27 @@ export class AdminHomeComponent implements OnInit {
     },
     series: [
       {
-        name: '',
+        name: 'Pending',
         data: [107, 31, 635, 203, 2]
       },
       {
-        name: '',
+        name: `Didn't Buy`,
         data: [133, 156, 947, 408, 6]
       },
       {
-        name: '',
+        name: 'Booked',
+        data: [973, 914, 4054, 732, 34]
+      },
+      {
+        name: 'Sold',
+        data: [973, 914, 4054, 732, 34]
+      },
+      {
+        name: 'Unresponsive',
+        data: [973, 914, 4054, 732, 34]
+      },
+      {
+        name: 'Spam',
         data: [973, 914, 4054, 732, 34]
       }
     ]

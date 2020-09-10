@@ -65,17 +65,12 @@ export class AdminReportComponent implements OnInit {
       type: 'pie',
       name: 'Browser share',
       data: [
-        ['Firefox',   45.0],
-        ['IE',       26.8],
-        {
-          name: 'Chrome',
-          y: 12.8,
-          sliced: true,
-          selected: true
-        },
-        ['Safari',    8.5],
-        ['Opera',     6.2],
-        ['Others',      0.7]
+        ['Pending', 45.0],
+        [`Didn't Buy`, 26.8],
+        ['Booked', 10.23],
+        ['Sold', 5.98],
+        ['Unresponsive', 0.00],
+        ['Spam', 0.00]
       ]
     }]
   };
@@ -91,9 +86,8 @@ export class AdminReportComponent implements OnInit {
       text: ''
     },
     xAxis:{
-      categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'], title: {
-        text: null
-      }
+      categories: ['Denny', 'John', 'David', 'Adam', 'Mike', 'James'],
+      title: { text: null }
     },
     yAxis : {
       min: 0, title: {
@@ -119,7 +113,7 @@ export class AdminReportComponent implements OnInit {
     series: [
       {
         name: 'New Business Team Performance',
-        data: [973, 914, 4054, 732, 34]
+        data: [973, 914, 4054, 732, 34, 423]
       }
     ]
   };

@@ -1,28 +1,30 @@
 import { Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { Option } from '../../../core/models/option';
 
 @Component({
-  selector: 'app-select',
-  templateUrl: './select.component.html',
-  styleUrls: ['./select.component.scss'],
+  selector: 'app-icon-input',
+  templateUrl: './icon-input.component.html',
+  styleUrls: ['./icon-input.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => SelectComponent),
+      useExisting: forwardRef(() => IconInputComponent),
       multi: true,
     }
   ]
 })
-export class SelectComponent implements ControlValueAccessor {
+export class IconInputComponent implements ControlValueAccessor {
 
   @Input() label: string;
-  @Input() hasBorder = false;
-  @Input() placeholder = 'Select option';
-  @Input() options: Option<any>[] = [];
+  @Input() hasPoint = false;
+  @Input() icon: string;
+  @Input() color: string;
+  @Input() placeholder = '';
+  @Input() type = 'text';
+  @Input() value;
+  @Input() min;
   @Input() readonly;
 
-  value: any;
   onChange;
 
   registerOnChange(fn: any): void {
@@ -39,16 +41,14 @@ export class SelectComponent implements ControlValueAccessor {
     this.value = obj;
   }
 
-  change(value): void {
+  change(value) {
+    if (this.type === 'number') {
+      value = +value;
+    }
     // only when change method registered
     if (this.onChange) {
       this.onChange(value);
     }
   }
-
-  clicked(e): void {
-    if (this.readonly) {
-      e.preventDefault();
-    }
-  }
 }
+

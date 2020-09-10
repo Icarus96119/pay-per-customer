@@ -49,7 +49,7 @@
 
   <ng-template #renewalAmountColumn let-campaignSubscription="row">
     <div class="d-flex flex-column">
-      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.renewalAmount | currency }}</span>
+      <span class="font-14 danger text-overflow font-weight-bold mb-1">{{ campaignSubscription.renewalAmount | currency: 'GBP' }}</span>
     </div>
   </ng-template>
 
